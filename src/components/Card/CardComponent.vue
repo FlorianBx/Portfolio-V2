@@ -1,7 +1,7 @@
 <script setup lang="ts"></script>
 
 <template>
-  <div class="w-44 flex-none space-y-8 pt-32 sm:pt-0">
+  <div class="w-80 flex-none space-y-8 pt-32 sm:pt-0">
     <div class="relative">
       <img
         src="../../assets/florian.jpg"

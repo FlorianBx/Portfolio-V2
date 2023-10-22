@@ -4,9 +4,11 @@ import NavBar from './components/NavBar/NavBar.vue'
 </script>
 
 <template>
-  <div class="mx-auto max-w-7xl sm:px-6 lg:px-8 bg-background">
-    <NavBar />
-    <HomePage />
+  <div class="w-full bg-background">
+    <div class="mx-auto max-w-full sm:px-6 lg:px-8">
+      <NavBar />
+      <HomePage />
+    </div>
   </div>
 </template>
 

@@ -1,7 +1,7 @@
 <template>
-  <div>
+  <div class="px-2">
     <h3 class="text-base font-semibold leading-6 text-gray-100">Linkedin 7 derniers jours</h3>
-    <dl class="mt-5 grid grid-cols-1 gap-5 sm:grid-cols-3">
+    <dl class="mt-5 grid grid-cols-1 gap-5 md:grid-cols-3">
       <div
         v-for="item in stats"
         :key="item.name"
