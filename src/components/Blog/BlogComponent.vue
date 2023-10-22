@@ -54,7 +54,7 @@ const blogPosts = [
 
 <template>
   <!-- Blog section -->
-  <div class="mx-auto mt-32 max-w-7xl sm:mt-40 px-8">
+  <div class="mx-auto mt-32 max-w-7xl sm:mt-40 px-10">
     <div class="mx-auto max-w-2xl lg:mx-0 lg:max-w-none">
       <h2 class="text-3xl font-bold tracking-tight text-white-900 sm:text-4xl">From the blog</h2>
       <p class="mt-2 text-lg leading-8 text-white-600">Vel dolorem qui facilis soluta sint aspernatur totam cumque.</p>
