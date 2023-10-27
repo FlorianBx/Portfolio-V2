@@ -10,7 +10,7 @@ export default {
         ring: '#246854',
         button: '#29A383',
         danger: '#e3342f',
-        card: '#20605960',
+        card: '#0F2E22',
         background: '#0D1512',
         darktitle: '#1d1d1d',
       },

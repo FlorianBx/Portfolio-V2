@@ -133,7 +133,7 @@ const menuItems = reactive([
     <ul class="flex gap-4 font-bold text-lg">
       <li
         v-for="item in menuItems"
-        :class="item.name === 'Home' ? 'text-primary cursor-pointer' : 'cursor-pointer'"
+        :class="item.name === 'Home' ? 'text-primary font-body cursor-pointer' : 'cursor-pointer font-body'"
         :key="item.name"
       >
         {{ item.name }}
