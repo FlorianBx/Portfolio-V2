@@ -4,14 +4,18 @@ import GithubIcon from '../../components/Logos/Media/GithubIcon.vue'
 import LinkedinIcon from '../../components/Logos/Media/LinkedinIcon.vue'
 import SectionSlot from '../../components/SectionSlot/SectionSlot.vue'
 import VueIcon from '../../components/Logos/Skills/VueIcon.vue'
+import TailwindIcon from '../../components/Logos/Skills/TailwindIcon.vue'
 </script>
 
 <template>
   <SectionSlot>
-    <h1 class="md:w-full w-40 text-4xl font-bold font-heading tracking-tight text-start text-primary sm:text-6xl">
+    <a class="absolute top-10 font-body left-14" href="#"
+      ><span class="text-primary">FR</span> | <span class="text-secondary">EN</span></a
+    >
+    <h1 class="md:w-full w-60 text-4xl font-bold font-heading tracking-tight text-start text-primary sm:text-6xl">
       Vue js Developer
     </h1>
-    <h2 class="md:w-full py-4 w-40 text-2xl font-bold font-heading tracking-tight text-start text-primary sm:text-4xl">
+    <h2 class="md:w-full py-4 text-2xl font-bold font-heading tracking-tight text-start text-primary sm:text-4xl">
       Hey, I'm Florian<span class="text-secondary">!</span>
     </h2>
     <p class="mt-0 py-4 md:text-lg md:w-full w-full text-start h-auto leading-8 text-gray-300 font-body">
@@ -21,7 +25,7 @@ import VueIcon from '../../components/Logos/Skills/VueIcon.vue'
     <a href="#" class="text-md font-body font-semibold leading-6 text-primary md:mb-3 hover:text-hover"
       >Learn more <span aria-hidden="true">→</span>
     </a>
-    <div class="flex justify-between">
+    <div class="flex justify-between items-center">
       <div class="flex w-full md:items-end gap-4 pt-4">
         <ButtonSocial>
           <template #image><GithubIcon /></template>
@@ -32,8 +36,13 @@ import VueIcon from '../../components/Logos/Skills/VueIcon.vue'
           <template #name>Linkedin</template>
         </ButtonSocial>
       </div>
-      <div class="flex gap-4">
-        <!-- <VueIcon /> -->
+      <div class="hidden md:block">
+        <div class="flex justify-center items-center gap-4">
+          <VueIcon />
+          <img width="40" height="40" src="../Logos/Skills/Pinia.png" alt="" />
+          <TailwindIcon />
+          <!-- <RestAPIcon /> -->
+        </div>
       </div>
     </div>
   </SectionSlot>

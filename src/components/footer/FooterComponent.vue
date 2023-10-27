@@ -23,9 +23,7 @@ import InstagramIcon from '../Logos/Media/InstagramIcon.vue'
           <InstagramIcon />
         </a>
       </div>
-      <p class="mt-10 text-center text-xs leading-5 text-primary">
-        &copy; 2023 Florian Beaumont, Made with 🩷 and VueJS.
-      </p>
+      <p class="mt-10 text-center text-xs leading-5 text-primary">&copy; 2023 Made with 🩷 by Florian Beaumont</p>
     </footer>
   </SectionSlot>
 </template>
