@@ -2,11 +2,7 @@
   <div class="px-2">
     <h3 class="text-base font-semibold leading-6 text-gray-100">Linkedin 7 derniers jours</h3>
     <dl class="mt-5 grid grid-cols-1 gap-5 md:grid-cols-3">
-      <div
-        v-for="item in stats"
-        :key="item.name"
-        class="overflow-hidden rounded-lg bg-gray-900 px-4 py-5 shadow sm:p-6"
-      >
+      <div v-for="item in stats" :key="item.name" class="overflow-hidden rounded-lg bg-card px-4 py-5 shadow sm:p-6">
         <dt class="truncate text-sm font-medium text-white-500">{{ item.name }}</dt>
         <dd
           :style="{ color: item.id === 2 || item.id === 3 ? 'green' : '' }"

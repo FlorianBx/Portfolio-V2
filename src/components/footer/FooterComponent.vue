@@ -54,7 +54,7 @@ const footerNavigation = {
 
 <template>
   <!-- Footer -->
-  <footer class="flex flex-col items-center mt-40 max-w-7xl overflow-hidden px-6 pb-20 sm:mt-64 sm:pb-24 lg:px-8">
+  <footer class="flex flex-col items-center mt-40 max-w-full overflow-hidden px-6 pb-20 sm:mt-64 sm:pb-24 lg:px-8">
     <nav
       class="-mb-6 columns-3 w-full flex justify-between sm:flex sm:justify-center sm:space-x-12"
       aria-label="Footer"

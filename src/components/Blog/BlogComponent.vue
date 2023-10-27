@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import SectionSlot from '../SectionSlot/SectionSlot.vue'
+
 const blogPosts = [
   {
     id: 1,
@@ -54,13 +56,13 @@ const blogPosts = [
 
 <template>
   <!-- Blog section -->
-  <div class="mx-auto mt-32 max-w-7xl sm:mt-40 px-10">
-    <div class="mx-auto max-w-2xl lg:mx-0 lg:max-w-none">
+  <SectionSlot>
+    <div class="text-start max-w-md md:max-w-5xl">
       <h2 class="text-3xl font-bold tracking-tight text-white-900 sm:text-4xl">From the blog</h2>
       <p class="mt-2 text-lg leading-8 text-white-600">Vel dolorem qui facilis soluta sint aspernatur totam cumque.</p>
     </div>
     <div
-      class="mx-auto mt-16 grid max-w-2xl auto-rows-fr grid-cols-1 gap-8 sm:mt-20 lg:mx-0 md:max-w-none md:grid-cols-3"
+      class="mx-auto mt-16 grid auto-rows-fr grid-cols-1 gap-8 sm:mt-20 lg:mx-0 md:grid-cols-3 max-w-md md:max-w-5xl"
     >
       <article
         v-for="post in blogPosts"
@@ -91,5 +93,5 @@ const blogPosts = [
         </h3>
       </article>
     </div>
-  </div>
+  </SectionSlot>
 </template>

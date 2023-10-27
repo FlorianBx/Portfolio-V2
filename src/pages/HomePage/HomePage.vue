@@ -1,69 +1,53 @@
 <script setup lang="ts">
+import { ref, onMounted } from 'vue'
 import AboutComponent from '../../components/About/AboutComponent.vue'
-// import GradienComponent from '../../components/Gradient/GradienComponent.vue'
 import FooterComponent from '../../components/footer/FooterComponent.vue'
 import BlogComponent from '../../components/Blog/BlogComponent.vue'
+
+import ButtonSocial from '../../components/ButtonSocial/ButtonSocial.vue'
+import GithubIcon from '../../components/Media/GithubIcon.vue'
+import LinkedinIcon from '../../components/Media/LinkedinIcon.vue'
+import SectionSlot from '../../components/SectionSlot/SectionSlot.vue'
+
+const showDiv = ref(false)
+
+onMounted(() => {
+  setTimeout(() => {
+    showDiv.value = true
+  }, 2000)
+})
 </script>
 
 <template>
-  <div class="flex flex-col justify-center items-center">
-    <!-- <GradienComponent /> -->
-    <section class="pt-20 max-w-md md:max-w-5xl mr-14 md:mr-14 sm:px-0 px-10">
-      <div class="md:max-w-full">
-        <div class="font-roboto text-7xl sm:text-8xl md:text-9xl">
-          <p class="text-darktitle drop-shadow-md neon">Front<br />end</p>
-        </div>
-        <h1 class="w-full text-white font-bold text-5xl sm:text-6xl md:text-6xl text-right">
-          Hello<span class="text-primary"> ! </span>I am<br />
-          Florian
-        </h1>
+  <div class="mt-32 max-w-full sm:mt-40">
+    <SectionSlot>
+      <h1
+        class="md:mt-10 md:w-full w-40 text-4xl font-bold font-heading tracking-tight text-start text-primary sm:text-6xl"
+      >
+        Vue js Developer
+      </h1>
+      <p class="mt-6 md:text-lg md:w-full w-full text-start h-auto leading-8 text-gray-300 font-body">
+        Self-taught Vue.js developer trained at <a href="https://42.fr/en/homepage/">42 school</a>. Dedicated front-end
+        coder with a keen eye for detail and a passion for clean design.
+      </p>
+      <a href="#" class="text-sm font-semibold leading-6 text-primary md:mb-3 hover:text-hover"
+        >Learn more <span aria-hidden="true">→</span>
+      </a>
+      <div class="flex w-full md:items-end gap-4">
+        <ButtonSocial>
+          <template #image><GithubIcon /></template>
+          <template #name>Github</template>
+        </ButtonSocial>
+        <ButtonSocial>
+          <template #image><LinkedinIcon /></template>
+          <template #name>Linkedin</template>
+        </ButtonSocial>
       </div>
-    </section>
-    <section class="sm:pt-4 pt-40">
+    </SectionSlot>
+    <section class="-mt-4">
       <AboutComponent />
     </section>
     <BlogComponent />
     <FooterComponent />
   </div>
 </template>
-
-<style scoped>
-.neon {
-  animation: animate 5s linear;
-}
-@keyframes animate {
-  0%,
-  18%,
-  22%,
-  25%,
-  53%,
-  57%,
-  63%,
-  65%,
-  80%,
-  82%,
-  90%,
-  92%,
-  100% {
-    text-shadow: none;
-  }
-  20%,
-  24%,
-  55%,
-  61%,
-  83%,
-  88%,
-  95%,
-  98% {
-    text-shadow:
-      0 0 0.5rem #fff,
-      0 0 0.7rem #fff,
-      0 0 1rem #fff,
-      0 0 4rem #00897b,
-      0 0 7rem #00897b,
-      0 0 8rem #00897b,
-      0 0 100rem #00897b,
-      0 0 7rem #00897b;
-  }
-}
-</style>

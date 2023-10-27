@@ -4,54 +4,37 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: '#00897b',
-        secondary: '#f06292',
+        primary: '#ADF0D4',
+        secondary: '#1FD8A4',
+        hover: '#114837',
+        ring: '#246854',
+        button: '#29A383',
         danger: '#e3342f',
         card: '#20605960',
-        background: '#181818',
+        background: '#0D1512',
         darktitle: '#1d1d1d',
       },
       borderColor: {
-        primary: '#00897b',
-        secondary: '#f06292',
+        primary: '#ADF0D4',
+        secondary: '#1FD8A4',
         danger: '#e3342f',
       },
-      fontFamily: {
-        roboto: ['Roboto Condensed', 'sans-serif'],
-      },
       fontSize: {
-        '6xl': [
-          '5rem',
-          {
-            lineHeight: '7.25rem',
-            letterSpacing: '-0.02em',
-            fontWeight: '700',
-          },
-        ],
-        '7xl': [
-          '10rem',
-          {
-            lineHeight: '10.25rem',
-            letterSpacing: '-0.02em',
-            fontWeight: '700',
-          },
-        ],
-        '8xl': [
-          '15rem',
-          {
-            lineHeight: '12.25rem',
-            letterSpacing: '-0.02em',
-            fontWeight: '700',
-          },
-        ],
-        '9xl': [
-          '20rem',
-          {
-            lineHeight: '15.25rem',
-            letterSpacing: '-0.02em',
-            fontWeight: '700',
-          },
-        ],
+        sm: '0.600rem',
+        base: '0.8rem',
+        xl: '1.066rem',
+        '2xl': '1.421rem',
+        '3xl': '1.894rem',
+        '4xl': '2.525rem',
+        '5xl': '3.366rem',
+      },
+      fontFamily: {
+        heading: 'Fragment Mono',
+        body: 'Fragment Mono',
+      },
+      fontWeight: {
+        normal: '400',
+        bold: '700',
       },
     },
   },
