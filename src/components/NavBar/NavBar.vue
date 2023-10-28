@@ -6,7 +6,7 @@ import { Bars3Icon, XMarkIcon } from '@heroicons/vue/24/outline'
 const menuItems = reactive([
   { name: 'Home', link: '/', current: false },
   { name: 'About', link: '/about', current: true },
-  { name: 'Projects', link: '/projects', current: false },
+  { name: 'Portfolio', link: '/porfolio', current: false },
   { name: 'Blog', link: '/blog', current: false },
   { name: 'Contact', link: '/contact', current: false },
 ])
@@ -24,17 +24,25 @@ const menuItems = reactive([
       </li>
     </ul>
   </div>
+  <div class="">
+    <a
+      class="absolute top-8 lg:right-24 md:right-32 right-16 rounded-md bg-button px-3.5 py-2.5 text-sm font-semibold font-body text-primary shadow-sm hover:bg-hover"
+      href="#"
+    >
+      Portfolio ➤
+    </a>
+  </div>
   <Disclosure as="nav" class="bg-transparent" v-slot="{ open }">
     <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
       <div class="relative flex h-16 items-center justify-between">
         <div class="absolute inset-y-0 top-9 right-0 flex items-center lg:hidden">
           <!-- Mobile menu button-->
           <DisclosureButton
-            class="z-50 relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+            class="z-50 relative inline-flex items-center justify-center rounded-md p-2 text-primary hover:bg-hover hover:text-white focus:outline-none focus:ring-0 focus:ring-inset focus:ring-white"
           >
             <span class="absolute -inset-0.5" />
             <span class="sr-only">Open main menu</span>
-            <Bars3Icon v-if="!open" class="block h-6 w-6" aria-hidden="true" />
+            <Bars3Icon v-if="!open" class="block h-9 w-9" aria-hidden="true" />
             <XMarkIcon v-else class="block h-6 w-6" aria-hidden="true" />
           </DisclosureButton>
         </div>

@@ -8,8 +8,8 @@ import TailwindIcon from '../../components/Logos/Skills/TailwindIcon.vue'
 </script>
 
 <template>
-  <SectionSlot :isTheFirstElement="true">
-    <a class="absolute top-10 font-body left-14" href="#"
+  <SectionSlot :is-the-first-element="true">
+    <a class="absolute top-10 font-body" href="#"
       ><span class="text-primary">FR</span> | <span class="text-secondary">EN</span></a
     >
     <h1 class="md:w-full w-60 text-4xl font-bold font-heading tracking-tight text-start text-primary sm:text-6xl">
@@ -36,12 +36,11 @@ import TailwindIcon from '../../components/Logos/Skills/TailwindIcon.vue'
           <template #name>Linkedin</template>
         </ButtonSocial>
       </div>
-      <div class="hidden md:block">
+      <div class="sm:static absolute top-24 md:block">
         <div class="flex justify-center items-center gap-4">
           <VueIcon />
           <img width="40" height="40" src="../Logos/Skills/Pinia.png" alt="" />
           <TailwindIcon />
-          <!-- <RestAPIcon /> -->
         </div>
       </div>
     </div>
