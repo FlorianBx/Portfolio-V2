@@ -8,7 +8,7 @@ import TailwindIcon from '../../components/Logos/Skills/TailwindIcon.vue'
 </script>
 
 <template>
-  <SectionSlot>
+  <SectionSlot :isTheFirstElement="true">
     <a class="absolute top-10 font-body left-14" href="#"
       ><span class="text-primary">FR</span> | <span class="text-secondary">EN</span></a
     >
