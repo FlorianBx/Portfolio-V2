@@ -67,7 +67,7 @@ const blogPosts = [
       <article
         v-for="post in blogPosts"
         :key="post.id"
-        class="cursor relative isolate flex flex-col justify-end overflow-hidden rounded-2xl bg-gray-900 px-8 pb-8 pt-80 sm:pt-48 lg:pt-80"
+        class="cursor relative isolate flex flex-col h-40 justify-end overflow-hidden rounded-2xl bg-gray-900 px-8 pb-8 pt-80 sm:pt-48 lg:pt-80"
       >
         <img :src="post.imageUrl" alt="" class="absolute inset-0 -z-10 h-full w-full object-cover" />
         <div class="absolute inset-0 -z-10 bg-gradient-to-t from-card via-gray-900/40" />

@@ -3,8 +3,8 @@ import ButtonSocial from '../../components/ButtonSocial/ButtonSocial.vue'
 import GithubIcon from '../../components/Logos/Media/GithubIcon.vue'
 import LinkedinIcon from '../../components/Logos/Media/LinkedinIcon.vue'
 import SectionSlot from '../../components/SectionSlot/SectionSlot.vue'
-import VueIcon from '../../components/Logos/Skills/VueIcon.vue'
-import TailwindIcon from '../../components/Logos/Skills/TailwindIcon.vue'
+// import VueIcon from '../../components/Logos/Skills/VueIcon.vue'
+// import TailwindIcon from '../../components/Logos/Skills/TailwindIcon.vue'
 </script>
 
 <template>
@@ -36,13 +36,13 @@ import TailwindIcon from '../../components/Logos/Skills/TailwindIcon.vue'
           <template #name>Linkedin</template>
         </ButtonSocial>
       </div>
-      <div class="sm:static absolute top-24 md:block">
+      <!-- <div class="sm:static absolute top-24 md:block">
         <div class="flex justify-center items-center gap-4">
           <VueIcon />
           <img width="40" height="40" src="../Logos/Skills/Pinia.png" alt="" />
           <TailwindIcon />
         </div>
-      </div>
+      </div> -->
     </div>
   </SectionSlot>
 </template>
