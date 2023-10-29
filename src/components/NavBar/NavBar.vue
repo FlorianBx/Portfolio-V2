@@ -32,6 +32,19 @@ const updateCurrentItem = (itemName: string): void => {
       </li>
     </ul>
   </div>
+  <div class="z-50 lg:hidden fixed right-0 left-0 bottom-0 p-8 bg-card/90">
+    <ul class="flex gap-4 font-bold text-md">
+      <li
+        v-for="item in menuItems"
+        :class="[item.current ? 'text-secondary font-bold cursor-pointer font-body' : 'cursor-pointer font-body']"
+        :key="item.name"
+      >
+        <a v-if="item.name !== 'Contact'" @click="updateCurrentItem(item.name)" v-scroll-to="item.link">
+          {{ item.name }}
+        </a>
+      </li>
+    </ul>
+  </div>
   <div class="">
     <a
       class="absolute top-8 lg:right-24 md:right-32 right-16 rounded-md bg-button px-3.5 py-2.5 text-sm font-semibold font-body text-primary shadow-sm hover:bg-hover"
