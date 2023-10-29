@@ -1,54 +1,6 @@
 <script setup lang="ts">
 import PortfolioElementComponent from '../PortfolioElement/PortfolioElementComponent.vue'
 import SectionSlot from '../SectionSlot/SectionSlot.vue'
-
-// const portfolio = [
-//   {
-//     id: 1,
-//     title: 'Keep calm and carry on',
-//     href: '#',
-//     description:
-//       'Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.',
-//     imageUrl: '../../assets/portf.png',
-//     date: 'Mar 16, 2020',
-//     datetime: '2023-03-16',
-//     author: {
-//       name: 'Florian Beaumont',
-//       imageUrl:
-//         'https://media.licdn.com/dms/image/D4E03AQEWzb2EhoGTyw/profile-displayphoto-shrink_200_200/0/1696890003423?e=1703721600&v=beta&t=EPpWoAewxUjwpi4QJsFOl_gYNoOK7m_wfVrcEOwgcGk',
-//     },
-//   },
-//   {
-//     id: 2,
-//     title: 'Vue js is the best',
-//     href: '#',
-//     description:
-//       'Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.',
-//     imageUrl: '../../assets/portf.png',
-//     date: 'Mar 16, 2020',
-//     datetime: '2023-11-16',
-//     author: {
-//       name: 'Florian Beaumont',
-//       imageUrl:
-//         'https://media.licdn.com/dms/image/D4E03AQEWzb2EhoGTyw/profile-displayphoto-shrink_200_200/0/1696890003423?e=1703721600&v=beta&t=EPpWoAewxUjwpi4QJsFOl_gYNoOK7m_wfVrcEOwgcGk',
-//     },
-//   },
-//   {
-//     id: 3,
-//     title: 'how to use tailwindcss',
-//     href: '#',
-//     description:
-//       'Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.',
-//     imageUrl: '../../assets/portf.png',
-//     date: 'Mar 16, 2020',
-//     datetime: '2023-10-16',
-//     author: {
-//       name: 'Florian Beaumont',
-//       imageUrl:
-//         'https://media.licdn.com/dms/image/D4E03AQEWzb2EhoGTyw/profile-displayphoto-shrink_200_200/0/1696890003423?e=1703721600&v=beta&t=EPpWoAewxUjwpi4QJsFOl_gYNoOK7m_wfVrcEOwgcGk',
-//     },
-//   },
-// ]
 </script>
 
 <template>
@@ -60,14 +12,48 @@ import SectionSlot from '../SectionSlot/SectionSlot.vue'
       </p>
     </div>
     <!-- Github section  -->
-    <PortfolioElementComponent technology="#42b883"></PortfolioElementComponent>
+    <PortfolioElementComponent technology="#42b883">
+      <template #title>Code Vault</template>
+      <template #tech>Vue</template>
+      <template #description
+        >Boost your productivity with an AI-powered code snippets manager for developers 🚀
+      </template>
+      <template #img="{ openModal }">
+        <img
+          @click="openModal"
+          src="../../assets/code-vault.webp"
+          alt=""
+          class="-z-10 object-contain rounded-md w-full h-full cursor-pointer"
+        />
+      </template>
+    </PortfolioElementComponent>
+    <PortfolioElementComponent technology="#61DAFB">
+      <template #title>Portfolio #<span class="text-red-300">deprecated</span></template>
+      <template #tech>React</template>
+      <template #description> My React portfolio showcases my web develop, projects... </template>
+      <template #img="{ openModal }">
+        <img
+          @click="openModal"
+          src="../../assets/portf.webp"
+          alt=""
+          class="-z-10 object-contain rounded-md w-full h-full cursor-pointer"
+        />
+      </template>
+    </PortfolioElementComponent>
     <PortfolioElementComponent technology="#61DAFB">
       <template #title>Blog</template>
       <template #tech>React</template>
-      <template #img>
-        <img src="../../assets/blog.webp" alt="" class="-z-10 h- w-48 object-contain rounded-md" />
+      <template #description
+        >My development blog is built with Gatsby.js and React.js, making it fast, responsive...
+      </template>
+      <template #img="{ openModal }">
+        <img
+          @click="openModal"
+          src="../../assets/blog.webp"
+          alt=""
+          class="-z-10 object-contain rounded-md w-full h-full cursor-pointer"
+        />
       </template>
     </PortfolioElementComponent>
-    <PortfolioElementComponent technology="#42b883"></PortfolioElementComponent>
   </SectionSlot>
 </template>
