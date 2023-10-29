@@ -6,7 +6,7 @@ import SectionSlot from '../../components/SectionSlot/SectionSlot.vue'
 
 <template>
   <SectionSlot>
-    <h2 class="text-3xl font-bold font-heading tracking-tight text-primary sm:text-4xl">About Me</h2>
+    <h2 id="about" class="text-3xl font-bold font-heading tracking-tight text-primary sm:text-4xl">About Me</h2>
     <div class="mt-6 flex flex-col gap-x-8 gap-y-20">
       <div class="max-w-6xl flex gap-4">
         <div class="hidden md:block flex-end w-3xl">

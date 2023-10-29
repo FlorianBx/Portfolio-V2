@@ -4,12 +4,18 @@ import { Disclosure, DisclosureButton, DisclosurePanel } from '@headlessui/vue'
 import { Bars3Icon, XMarkIcon } from '@heroicons/vue/24/outline'
 
 const menuItems = reactive([
-  { name: 'Home', link: '/', current: false },
-  { name: 'About', link: '/about', current: true },
-  { name: 'Portfolio', link: '/porfolio', current: false },
-  { name: 'Blog', link: '/blog', current: false },
-  { name: 'Contact', link: '/contact', current: false },
+  { name: 'Home', link: '#home', current: false },
+  { name: 'Portfolio', link: '#portfolio', current: false },
+  { name: 'About', link: '#about', current: true },
+  { name: 'Blog', link: '#blog', current: false },
+  { name: 'Contact', link: '#home', current: false },
 ])
+
+const updateCurrentItem = (itemName: string): void => {
+  menuItems.forEach((item) => {
+    item.current = item.name === itemName
+  })
+}
 </script>
 
 <template>
@@ -17,10 +23,12 @@ const menuItems = reactive([
     <ul class="flex gap-4 font-bold text-lg">
       <li
         v-for="item in menuItems"
-        :class="item.name === 'Home' ? 'text-primary font-body cursor-pointer' : 'cursor-pointer font-body'"
+        :class="[item.current ? 'text-secondary font-bold cursor-pointer font-body' : 'cursor-pointer font-body']"
         :key="item.name"
       >
-        {{ item.name }}
+        <a @click="updateCurrentItem(item.name)" v-scroll-to="item.link">
+          {{ item.name }}
+        </a>
       </li>
     </ul>
   </div>
@@ -49,7 +57,7 @@ const menuItems = reactive([
       </div>
     </div>
     <DisclosurePanel
-      class="z-40 lg:hidden fixed top-0 left-0 w-full h-full bg-black bg-opacity-90 flex items-center justify-center"
+      class="z-50 lg:hidden fixed top-0 left-0 w-full h-full bg-black bg-opacity-90 flex items-center justify-center"
     >
       <div class="shadow-md space-y-1 px-2 py-4">
         <DisclosureButton

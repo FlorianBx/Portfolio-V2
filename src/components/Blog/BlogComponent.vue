@@ -57,7 +57,7 @@ const blogPosts = [
 <template>
   <!-- Blog section -->
   <SectionSlot>
-    <div class="text-start max-w-md md:max-w-5xl">
+    <div id="blog" class="text-start max-w-md md:max-w-5xl">
       <h2 class="text-3xl font-bold font-heading tracking-tight text-primary sm:text-4xl">Latest articles</h2>
       <p class="mt-2 text-lg font-body leading-8 text-primary">
         Vel dolorem qui facilis soluta sint aspernatur totam cumque.
