@@ -1,7 +1,18 @@
 <template>
-  <svg width="80" height="80" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" fill="#29A383">
+  <svg
+    class="transition-all duration-150 hover:-translate-y-2"
+    width="80"
+    height="80"
+    viewBox="0 0 32 32"
+    xmlns="http://www.w3.org/2000/svg"
+    fill="#29A383"
+  >
     <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+    <g
+      id="SVGRepo_tracerCarrier"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    ></g>
     <g id="SVGRepo_iconCarrier">
       <title>file_type_tailwind</title>
       <path

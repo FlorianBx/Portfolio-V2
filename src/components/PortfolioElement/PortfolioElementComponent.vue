@@ -25,7 +25,7 @@ function toggleModal() {
 
 <template>
   <div
-    class="mt-4 h-48 p-8 flex justify-between items-center border-2 border-ring bg-card rounded-md"
+    class="mt-4 h-48 p-8 flex justify-between items-center border-2 border-ring bg-card rounded-md transition-all duration-300 ease-in-out transform hover:scale-105"
   >
     <div class="flex-1">
       <div class="flex items-center">

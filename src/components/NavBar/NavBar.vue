@@ -35,8 +35,8 @@ const filteredMenuItems = computed(() => {
         v-for="item in menuItems"
         :class="[
           item.current
-            ? 'text-secondary font-bold cursor-pointer font-body'
-            : 'cursor-pointer font-body',
+            ? 'text-secondary font-bold cursor-pointer font-body hover:text-hover'
+            : 'cursor-pointer font-body hover:text-hover',
         ]"
         :key="item.name"
       >

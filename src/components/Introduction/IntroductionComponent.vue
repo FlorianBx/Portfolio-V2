@@ -11,10 +11,10 @@ import VitestIcon from '../Logos/Skills/VitestIcon.vue'
 
 <template>
   <SectionSlot :is-the-first-element="true">
-    <a id="home" class="absolute top-10 font-body" href="#"
+    <!-- <a id="home" class="absolute top-10 font-body" href="#"
       ><span class="text-primary">FR</span> |
       <span class="text-secondary">EN</span>
-    </a>
+    </a> -->
     <h1
       class="md:w-full w-60 text-4xl font-bold font-heading tracking-tight text-start text-primary sm:text-6xl"
     >
