@@ -1,7 +1,7 @@
 <template>
   <div class="px-2">
     <h3 class="text-base font-semibold font-heading text-primary">
-      Linkedin 7 derniers jours
+      LinkedIn last 7 days
     </h3>
     <dl class="mt-4 grid grid-cols-1 gap-5 md:grid-cols-3">
       <div
