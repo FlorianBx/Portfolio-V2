@@ -12,20 +12,31 @@ import VitestIcon from '../Logos/Skills/VitestIcon.vue'
 <template>
   <SectionSlot :is-the-first-element="true">
     <a id="home" class="absolute top-10 font-body" href="#"
-      ><span class="text-primary">FR</span> | <span class="text-secondary">EN</span></a
+      ><span class="text-primary">FR</span> |
+      <span class="text-secondary">EN</span>
+    </a>
+    <h1
+      class="md:w-full w-60 text-4xl font-bold font-heading tracking-tight text-start text-primary sm:text-6xl"
     >
-    <h1 class="md:w-full w-60 text-4xl font-bold font-heading tracking-tight text-start text-primary sm:text-6xl">
       Vue js Developer
     </h1>
-    <h2 class="md:w-full py-4 text-2xl font-bold font-heading tracking-tight text-start text-primary sm:text-4xl">
+    <h2
+      class="md:w-full py-4 text-2xl font-bold font-heading tracking-tight text-start text-primary sm:text-4xl"
+    >
       Hey, I'm Florian<span class="text-secondary">!</span>
     </h2>
-    <p class="mt-0 py-4 md:text-lg md:w-full w-full text-start h-auto leading-8 text-gray-300 font-body">
-      Self-taught Vue.js developer trained at <a href="https://42.fr/en/homepage/">42 school</a>. Dedicated front-end
+    <p
+      class="mt-0 py-4 md:text-lg md:w-full w-full text-start h-auto leading-8 text-gray-300 font-body"
+    >
+      Self-taught Vue.js developer trained at
+      <a href="https://42.fr/en/homepage/">42 school</a>. Dedicated front-end
       coder with a keen eye for detail and a passion for clean design.
     </p>
-    <a href="#" class="text-md font-body font-semibold leading-6 text-primary md:mb-3 hover:text-hover"
-      >Learn more <span aria-hidden="true">→</span>
+    <a
+      href="#"
+      class="text-md font-body font-semibold leading-6 text-primary md:mb-3 hover:text-hover"
+    >
+      Learn more <span aria-hidden="true">→</span>
     </a>
     <div class="flex justify-between items-center">
       <div class="flex w-full md:items-end gap-4 pt-4">
@@ -39,7 +50,7 @@ import VitestIcon from '../Logos/Skills/VitestIcon.vue'
         </ButtonSocial>
       </div>
       <div class="sm:static absolute top-24 md:block">
-        <div class="flex justify-center items-center gap-4 relative">
+        <div class="flex justify-center items-center gap-4 relative w-64">
           <VueIcon />
           <VitestIcon />
           <PiniaIcon />

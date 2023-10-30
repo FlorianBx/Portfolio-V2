@@ -22,37 +22,15 @@ const emailLink = computed(() => {
   const subject = encodeURIComponent('Contact from portfolio')
   return `mailto:${email}?subject=${subject}`
 })
+
+const filteredMenuItems = computed(() => {
+  return menuItems.filter((item) => item.name !== 'Contact')
+})
 </script>
 
 <template>
-  <div class="hidden lg:block fixed -right-40 p-4 top-48 rotate-90">
+  <div class="hidden md:block fixed -right-44 p-4 top-48 rotate-90">
     <ul class="flex gap-4 font-bold text-lg">
-      <li
-        v-for="item in menuItems"
-        :class="[
-          item.current
-            ? 'text-secondary font-bold cursor-pointer font-body'
-            : 'cursor-pointer font-body',
-        ]"
-        :key="item.name"
-      >
-        <a
-          v-if="item.name != 'Contact'"
-          @click="updateCurrentItem(item.name)"
-          v-scroll-to="item.link"
-        >
-          {{ item.name }}
-        </a>
-        <a v-if="item.name === 'Contact'" :href="emailLink">
-          {{ item.name }}
-        </a>
-      </li>
-    </ul>
-  </div>
-  <div
-    class="z-50 lg:hidden fixed right-0 left-0 -bottom-1 p-8 bg-card/95 rounded-md"
-  >
-    <ul class="flex gap-4 font-bold text-md">
       <li
         v-for="item in menuItems"
         :class="[
@@ -69,23 +47,36 @@ const emailLink = computed(() => {
         >
           {{ item.name }}
         </a>
+        <a v-if="item.name === 'Contact'" :href="emailLink">
+          {{ item.name }}
+        </a>
       </li>
     </ul>
   </div>
-  <div class="">
-    <a
-      class="absolute top-8 lg:right-24 md:right-32 right-16 rounded-md bg-button px-3.5 py-2.5 text-sm font-semibold font-body text-primary shadow-sm hover:bg-hover"
-      href="#"
-    >
-      Portfolio ➤
-    </a>
+  <div
+    class="z-50 md:hidden fixed right-0 left-0 -bottom-1 p-8 bg-card/95 rounded-md"
+  >
+    <ul class="flex gap-4 font-bold text-md sm:justify-end justify-around">
+      <li
+        v-for="item in filteredMenuItems"
+        :class="[
+          item.current
+            ? 'text-secondary font-bold cursor-pointer font-body'
+            : 'cursor-pointer font-body',
+        ]"
+        :key="item.name"
+      >
+        <a @click="updateCurrentItem(item.name)" v-scroll-to="item.link">
+          {{ item.name }}
+        </a>
+      </li>
+    </ul>
   </div>
+  <!-- Mobile menu -->
   <Disclosure as="nav" class="bg-transparent" v-slot="{ open }">
     <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
       <div class="relative flex h-16 items-center justify-between">
-        <div
-          class="absolute inset-y-0 top-9 right-0 flex items-center lg:hidden"
-        >
+        <div class="fixed top-5 right-5 md:hidden">
           <!-- Mobile menu button-->
           <DisclosureButton
             class="z-50 relative inline-flex items-center justify-center rounded-md p-2 text-primary hover:bg-hover hover:text-white focus:outline-none focus:ring-0 focus:ring-inset focus:ring-white"
@@ -103,10 +94,11 @@ const emailLink = computed(() => {
     >
       <div class="shadow-md space-y-1 px-2 py-4">
         <DisclosureButton
-          v-for="item in menuItems"
+          v-for="item in filteredMenuItems"
           :key="item.name"
           as="a"
           :href="item.link"
+          @click="updateCurrentItem(item.name)"
           :class="[
             item.current
               ? 'bg-card text-primary font-body'

@@ -61,11 +61,13 @@ const { technology } = props
   <!-- Modal -->
   <div
     v-if="showModal"
-    class="fixed z-40 top-0 left-0 w-full h-full flex justify-center items-center bg-black bg-opacity-50"
+    class="fixed z-40 top-0 left-0 w-full h-full flex justify-center items-center bg-black bg-opacity-50 transition-opacity ease-in-out duration-1000"
     @click="toggleModal"
     role="dialog"
   >
-    <div class="relative p-4 rounded-lg">
+    <div
+      class="relative p-4 rounded-lg transition-transform ease-in-out duration-1000 transform scale-90"
+    >
       <button
         class="absolute text-card bg-secondary p-4 rounded-full font-bold text-xl top-6 right-8 z-40"
       >
