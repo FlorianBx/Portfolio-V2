@@ -1,6 +1,4 @@
 <script setup lang="ts">
-//get props isTheFirstElement
-import { defineProps } from 'vue'
 defineProps({
   isTheFirstElement: {
     type: Boolean,

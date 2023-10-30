@@ -3,33 +3,42 @@ import StarIcon from '../Logos/StarIcon.vue'
 import ForkedIcon from '../Logos/ForkedIcon.vue'
 import ProjectGithubIcon from '../Logos/ProjectGithubIcon.vue'
 
-import { defineProps, ref } from 'vue'
-
-const showModal = ref(false)
+import { ref } from 'vue'
 const props = defineProps({
   technology: {
     type: String,
     default: '#42b883',
   },
+  projectGithubURL: {
+    type: String,
+    default: 'https://github.com/BFlorian91',
+  },
 })
+const { technology } = props
 
+// Modal !
+const showModal = ref(false)
 function toggleModal() {
   showModal.value = !showModal.value
 }
-
-const { technology } = props
 </script>
 
 <template>
   <div
-    class="mt-4 h-40 p-4 flex justify-between items-center border-2 border-ring bg-card rounded-md"
+    class="mt-4 h-48 p-8 flex justify-between items-center border-2 border-ring bg-card rounded-md"
   >
     <div class="flex-1">
       <div class="flex items-center">
         <ProjectGithubIcon />
-        <slot name="title">Portfolio</slot>
+        <a
+          class="text-secondary font-bold font-heading"
+          target="_blank"
+          :href="projectGithubURL"
+        >
+          <slot name="title">Portfolio</slot>
+        </a>
       </div>
-      <p class="py-3">
+      <p class="py-3 font-body max-h-24 overflow-hidden">
         <slot name="description"></slot>
       </p>
       <div class="flex items-center gap-4">

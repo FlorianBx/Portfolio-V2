@@ -16,12 +16,17 @@ import SectionSlot from '../SectionSlot/SectionSlot.vue'
       </p>
     </div>
     <!-- Github section  -->
-    <PortfolioElementComponent technology="#42b883">
+    <PortfolioElementComponent
+      technology="#42b883"
+      project-github-u-r-l="https://github.com/BFlorian91/Code-Snippets-Vault"
+    >
       <template #title>Code Vault</template>
       <template #tech>Vue</template>
       <template #description>
-        Boost your productivity with an AI-powered code snippets manager for
-        developers 🚀
+        <p class="line-clamp-2 sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl">
+          Boost your productivity with an AI-powered code snippets manager for
+          developers 🚀
+        </p>
       </template>
       <template #img>
         <img
@@ -31,13 +36,21 @@ import SectionSlot from '../SectionSlot/SectionSlot.vue'
         />
       </template>
     </PortfolioElementComponent>
-    <PortfolioElementComponent technology="#61DAFB">
+    <PortfolioElementComponent
+      technology="#61DAFB"
+      project-github-u-r-l="https://github.com/BFlorian91/react-portfolio"
+    >
       <template #title>
         Portfolio #<span class="text-red-300">deprecated</span></template
       >
       <template #tech>React</template>
       <template #description>
-        My React portfolio showcases my web develop, projects...
+        <p class="line-clamp-2 sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl">
+          My React portfolio website showcases my web development and other
+          projects. It's interactive, responsive, and easy to navigate. With a
+          clean and modern design, it highlights my experience and creativity
+          across a range of technologies, including React.
+        </p>
       </template>
       <template #img>
         <img
@@ -47,11 +60,16 @@ import SectionSlot from '../SectionSlot/SectionSlot.vue'
         />
       </template>
     </PortfolioElementComponent>
-    <PortfolioElementComponent technology="#61DAFB">
+    <PortfolioElementComponent
+      technology="#61DAFB"
+      project-github-u-r-l="https://github.com/BFlorian91/Blog-dev"
+    >
       <template #title>Blog</template>
       <template #tech>React</template>
-      <template #description
-        >My development blog is built with Gatsby.js and React.js, making it
+      <template #description>
+        <p class="line-clamp-2 sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl">
+          My development blog is built with Gatsby.js and React.js, making it
+        </p>
         fast, responsive...
       </template>
       <template #img>
