@@ -11,8 +11,8 @@ import SectionSlot from '../SectionSlot/SectionSlot.vue'
       >
         Portfolio
       </h2>
-      <p class="mt-2 text-lg font-body leading-8 text-primary">
-        Vel dolorem qui facilis soluta sint aspernatur totam cumque.
+      <p class="mt-2 px-1 text-lg font-body leading-8 text-primary">
+        What I've Been Working On
       </p>
     </div>
     <!-- Github section  -->

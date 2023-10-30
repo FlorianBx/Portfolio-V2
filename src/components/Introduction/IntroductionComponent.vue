@@ -33,8 +33,8 @@ import VitestIcon from '../Logos/Skills/VitestIcon.vue'
       coder with a keen eye for detail and a passion for clean design.
     </p>
     <a
-      href="#"
-      class="text-md font-body font-semibold leading-6 text-primary md:mb-3 hover:text-hover"
+      v-scroll-to="'#about'"
+      class="cursor-pointer text-md font-body font-semibold leading-6 text-primary md:mb-3 hover:text-hover"
     >
       Learn more <span aria-hidden="true">→</span>
     </a>

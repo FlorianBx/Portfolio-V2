@@ -64,7 +64,8 @@ const blogPosts = [
         Latest articles
       </h2>
       <p class="mt-2 text-lg font-body leading-8 text-primary">
-        Vel dolorem qui facilis soluta sint aspernatur totam cumque.
+        An insight into my recent thoughts and contributions to the tech
+        community.
       </p>
     </div>
     <div
