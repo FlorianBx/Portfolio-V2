@@ -1,19 +1,68 @@
-# Vue 3 + TypeScript + Vite
+# Florian Beaumont's Portfolio
+[Visit the Portfolio](https://florianbeaumont.netlify.app)
+## Introduction
+This repository contains the source code for my Vue.js portfolio. The website serves to showcase my skills, experience, and projects in web development.
 
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+![Portfolio Preview](https://github.com/BFlorian91/Portfolio-V2/blob/main/src/assets/preview.png?raw=true)
 
-## Recommended IDE Setup
+## Technologies Used
 
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+![](https://img.shields.io/badge/Vue%20js-35495E?style=for-the-badge&logo=vuedotjs&logoColor=4FC08D)
+![](https://img.shields.io/badge/Vite-B73BFE?style=for-the-badge&logo=vite&logoColor=FFD62E)
+![](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
+![](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![](https://img.shields.io/badge/pnpm-yellow?style=for-the-badge&logo=pnpm&logoColor=white)
 
-## Type Support For `.vue` Imports in TS
+## Features
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin) to make the TypeScript language service aware of `.vue` types.
+- Personal and professional introduction
+- Skills section
+- Project gallery
+- Technical blog (coming soon)
+- Contact
 
-If the standalone TypeScript plugin doesn't feel fast enough to you, Volar has also implemented a [Take Over Mode](https://github.com/johnsoncodehk/volar/discussions/471#discussioncomment-1361669) that is more performant. You can enable it by the following steps:
+## Local Installation and Running
 
-1. Disable the built-in TypeScript Extension
-   1. Run `Extensions: Show Built-in Extensions` from VSCode's command palette
-   2. Find `TypeScript and JavaScript Language Features`, right click and select `Disable (Workspace)`
-2. Reload the VSCode window by running `Developer: Reload Window` from the command palette.
-# starter_vue
+To install and run this project locally, follow these steps:
+
+1. Clone the repository:
+
+   ```bash
+   git clone git@github.com:BFlorian91/Portfolio-V2.git
+   ```
+
+2. Install the dependencies:
+
+   ```bash
+   cd Portfolio-V2
+   pnpm install
+   ```
+
+3. Run the project:
+
+   ```bash
+   pnpm run serve
+   ```
+
+You can now access the application at `http://localhost:5173`.
+
+## Tests
+
+To run unit tests:
+
+```bash
+pnpm run test
+```
+
+## Deployment
+
+The site is currently deployed via Netlify.
+
+## Author
+
+- Florian Beaumont - Web Developer specialized in Vue.js and other front-end technologies.
+
+---
+
+
+
