@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import IntroductionComponent from '../../components/Introduction/IntroductionComponent.vue'
 import AboutComponent from '../../components/About/AboutComponent.vue'
-import FooterComponent from '../../components/Footer/FooterComponent.vue'
+// import FooterComponent from '../../components/Footer/FooterComponent.vue'
 import BlogComponent from '../../components/Blog/BlogComponent.vue'
 import PortfolioComponent from '../../components/Portfolio/PortfolioComponent.vue'
 </script>
@@ -12,6 +12,6 @@ import PortfolioComponent from '../../components/Portfolio/PortfolioComponent.vu
     <PortfolioComponent />
     <AboutComponent />
     <BlogComponent />
-    <FooterComponent />
+    <!-- <FooterComponent /> -->
   </div>
 </template>
