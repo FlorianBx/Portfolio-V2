@@ -8,7 +8,7 @@ import InstagramIcon from '../Logos/Media/InstagramIcon.vue'
 <template>
   <!-- Footer -->
   <SectionSlot>
-    <footer
+    <div role="footer"
       class="flex flex-col -mt-20 items-center max-w-full font-body overflow-hidden px-6 pb-20 sm:pb-24 lg:px-8"
     >
       <div class="mt-10 flex justify-center gap-12 w-full">
@@ -28,6 +28,6 @@ import InstagramIcon from '../Logos/Media/InstagramIcon.vue'
       <p class="mt-10 text-center text-xs leading-5 text-primary">
         &copy; 2023 Made with 🩷 by Florian Beaumont
       </p>
-    </footer>
+    </div>
   </SectionSlot>
 </template>
