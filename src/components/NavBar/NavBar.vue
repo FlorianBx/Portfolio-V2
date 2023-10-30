@@ -1,12 +1,12 @@
 <script setup lang="ts">
-import { reactive } from 'vue'
+import { reactive, computed } from 'vue'
 import { Disclosure, DisclosureButton, DisclosurePanel } from '@headlessui/vue'
 import { Bars3Icon, XMarkIcon } from '@heroicons/vue/24/outline'
 
 const menuItems = reactive([
-  { name: 'Home', link: '#home', current: false },
+  { name: 'Home', link: '#home', current: true },
   { name: 'Portfolio', link: '#portfolio', current: false },
-  { name: 'About', link: '#about', current: true },
+  { name: 'About', link: '#about', current: false },
   { name: 'Blog', link: '#blog', current: false },
   { name: 'Contact', link: '#home', current: false },
 ])
@@ -16,6 +16,12 @@ const updateCurrentItem = (itemName: string): void => {
     item.current = item.name === itemName
   })
 }
+
+const emailLink = computed(() => {
+  const email = '2jggvgdztt@privaterelay.appleid.com'
+  const subject = encodeURIComponent('Contact from portfolio')
+  return `mailto:${email}?subject=${subject}`
+})
 </script>
 
 <template>
@@ -23,23 +29,44 @@ const updateCurrentItem = (itemName: string): void => {
     <ul class="flex gap-4 font-bold text-lg">
       <li
         v-for="item in menuItems"
-        :class="[item.current ? 'text-secondary font-bold cursor-pointer font-body' : 'cursor-pointer font-body']"
+        :class="[
+          item.current
+            ? 'text-secondary font-bold cursor-pointer font-body'
+            : 'cursor-pointer font-body',
+        ]"
         :key="item.name"
       >
-        <a @click="updateCurrentItem(item.name)" v-scroll-to="item.link">
+        <a
+          v-if="item.name != 'Contact'"
+          @click="updateCurrentItem(item.name)"
+          v-scroll-to="item.link"
+        >
+          {{ item.name }}
+        </a>
+        <a v-if="item.name === 'Contact'" :href="emailLink">
           {{ item.name }}
         </a>
       </li>
     </ul>
   </div>
-  <div class="z-50 lg:hidden fixed right-0 left-0 bottom-0 p-8 bg-card/90">
+  <div
+    class="z-50 lg:hidden fixed right-0 left-0 -bottom-1 p-8 bg-card/95 rounded-md"
+  >
     <ul class="flex gap-4 font-bold text-md">
       <li
         v-for="item in menuItems"
-        :class="[item.current ? 'text-secondary font-bold cursor-pointer font-body' : 'cursor-pointer font-body']"
+        :class="[
+          item.current
+            ? 'text-secondary font-bold cursor-pointer font-body'
+            : 'cursor-pointer font-body',
+        ]"
         :key="item.name"
       >
-        <a v-if="item.name !== 'Contact'" @click="updateCurrentItem(item.name)" v-scroll-to="item.link">
+        <a
+          v-if="item.name !== 'Contact'"
+          @click="updateCurrentItem(item.name)"
+          v-scroll-to="item.link"
+        >
           {{ item.name }}
         </a>
       </li>
@@ -56,7 +83,9 @@ const updateCurrentItem = (itemName: string): void => {
   <Disclosure as="nav" class="bg-transparent" v-slot="{ open }">
     <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
       <div class="relative flex h-16 items-center justify-between">
-        <div class="absolute inset-y-0 top-9 right-0 flex items-center lg:hidden">
+        <div
+          class="absolute inset-y-0 top-9 right-0 flex items-center lg:hidden"
+        >
           <!-- Mobile menu button-->
           <DisclosureButton
             class="z-50 relative inline-flex items-center justify-center rounded-md p-2 text-primary hover:bg-hover hover:text-white focus:outline-none focus:ring-0 focus:ring-inset focus:ring-white"
@@ -79,7 +108,9 @@ const updateCurrentItem = (itemName: string): void => {
           as="a"
           :href="item.link"
           :class="[
-            item.current ? 'bg-card text-primary font-body' : 'text-primary hover:bg-hover hover:text-white',
+            item.current
+              ? 'bg-card text-primary font-body'
+              : 'text-primary hover:bg-hover hover:text-white',
             'block rounded-md px-3 py-2 lg:text-base text-3xl font-body',
           ]"
           :aria-current="item.current ? 'page' : undefined"

@@ -58,29 +58,52 @@ const blogPosts = [
   <!-- Blog section -->
   <SectionSlot>
     <div id="blog" class="text-start max-w-md md:max-w-5xl">
-      <h2 class="text-3xl font-bold font-heading tracking-tight text-primary sm:text-4xl">Latest articles</h2>
+      <h2
+        class="text-3xl font-bold font-heading tracking-tight text-primary sm:text-4xl"
+      >
+        Latest articles
+      </h2>
       <p class="mt-2 text-lg font-body leading-8 text-primary">
         Vel dolorem qui facilis soluta sint aspernatur totam cumque.
       </p>
     </div>
-    <div class="mx-auto grid auto-rows-fr grid-cols-1 gap-8 sm:mt-8 mt-12 lg:mx-0 md:grid-cols-3 max-w-md md:max-w-5xl">
+    <div
+      class="mx-auto grid auto-rows-fr grid-cols-1 gap-8 sm:mt-8 mt-12 lg:mx-0 md:grid-cols-3 max-w-md md:max-w-5xl"
+    >
       <article
         v-for="post in blogPosts"
         :key="post.id"
         class="cursor relative isolate flex flex-col h-40 justify-end overflow-hidden rounded-2xl bg-gray-900 px-8 pb-8 pt-80 sm:pt-48 lg:pt-80"
       >
-        <img :src="post.imageUrl" alt="" class="absolute inset-0 -z-10 h-full w-full object-cover" />
-        <div class="absolute inset-0 -z-10 bg-gradient-to-t from-card via-gray-900/40" />
-        <div class="absolute inset-0 -z-10 rounded-2xl ring-1 ring-inset ring-gray-900/10" />
+        <img
+          :src="post.imageUrl"
+          alt=""
+          class="absolute inset-0 -z-10 h-full w-full object-cover"
+        />
+        <div
+          class="absolute inset-0 -z-10 bg-gradient-to-t from-card via-gray-900/40"
+        />
+        <div
+          class="absolute inset-0 -z-10 rounded-2xl ring-1 ring-inset ring-gray-900/10"
+        />
 
-        <div class="flex flex-wrap items-center gap-y-1 overflow-hidden text-sm font-body leading-6 text-primary">
+        <div
+          class="flex flex-wrap items-center gap-y-1 overflow-hidden text-sm font-body leading-6 text-primary"
+        >
           <time :datetime="post.datetime" class="mr-8">{{ post.date }}</time>
           <div class="-ml-4 flex items-center gap-x-4">
-            <svg viewBox="0 0 2 2" class="-ml-0.5 h-0.5 w-0.5 flex-none fill-white/50">
+            <svg
+              viewBox="0 0 2 2"
+              class="-ml-0.5 h-0.5 w-0.5 flex-none fill-white/50"
+            >
               <circle cx="1" cy="1" r="1" />
             </svg>
             <div class="flex gap-x-2.5">
-              <img :src="post.author.imageUrl" alt="" class="h-6 w-6 flex-none rounded-full bg-card/10" />
+              <img
+                :src="post.author.imageUrl"
+                alt=""
+                class="h-6 w-6 flex-none rounded-full bg-card/10"
+              />
               {{ post.author.name }}
             </div>
           </div>

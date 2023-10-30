@@ -21,7 +21,9 @@ const { technology } = props
 </script>
 
 <template>
-  <div class="mt-4 h-40 p-4 flex justify-between items-center border-2 border-ring bg-card rounded-md">
+  <div
+    class="mt-4 h-40 p-4 flex justify-between items-center border-2 border-ring bg-card rounded-md"
+  >
     <div class="flex-1">
       <div class="flex items-center">
         <ProjectGithubIcon />
@@ -32,7 +34,10 @@ const { technology } = props
       </p>
       <div class="flex items-center gap-4">
         <div class="flex items-center space-x-1">
-          <div :style="{ background: technology }" class="w-4 h-4 mr-1.5 rounded-full"></div>
+          <div
+            :style="{ background: technology }"
+            class="w-4 h-4 mr-1.5 rounded-full"
+          ></div>
           <slot name="tech">Vue</slot>
         </div>
         <div class="flex items-center">
@@ -45,8 +50,12 @@ const { technology } = props
         </div>
       </div>
     </div>
-    <div @click="toggleModal" role="dialog" class="rounded-md md:block hidden w-56 h-34 p-2.5">
-      <slot name="img"></slot>
+    <div
+      @click="toggleModal"
+      role="dialog"
+      class="rounded-md md:block hidden w-56 h-34 p-2.5"
+    >
+      <slot name="img" :open-modal="toggleModal"></slot>
     </div>
   </div>
   <!-- Modal -->
@@ -57,8 +66,12 @@ const { technology } = props
     role="dialog"
   >
     <div class="relative p-4 rounded-lg">
-      <button class="absolute text-card bg-secondary p-4 rounded-full font-bold text-xl top-6 right-8 z-40">X</button>
-      <slot name="img"></slot>
+      <button
+        class="absolute text-card bg-secondary p-4 rounded-full font-bold text-xl top-6 right-8 z-40"
+      >
+        X
+      </button>
+      <slot name="img" :open-modal="toggleModal"></slot>
     </div>
   </div>
 </template>
