@@ -23,9 +23,8 @@ import SectionSlot from '../SectionSlot/SectionSlot.vue'
         Boost your productivity with an AI-powered code snippets manager for
         developers 🚀
       </template>
-      <template #img="{ openModal }">
+      <template #img>
         <img
-          @click="openModal"
           src="../../assets/code-vault.webp"
           alt=""
           class="-z-10 object-contain rounded-md w-full h-full cursor-pointer"
@@ -40,12 +39,11 @@ import SectionSlot from '../SectionSlot/SectionSlot.vue'
       <template #description>
         My React portfolio showcases my web develop, projects...
       </template>
-      <template #img="{ openModal }">
+      <template #img>
         <img
-          @click="openModal"
           src="../../assets/portf.webp"
           alt=""
-          class="-z-10 object-contain rounded-md w-full h-full cursor-pointer"
+          class="-z-10 object-contain rounded-md h-full cursor-pointer"
         />
       </template>
     </PortfolioElementComponent>
@@ -56,9 +54,8 @@ import SectionSlot from '../SectionSlot/SectionSlot.vue'
         >My development blog is built with Gatsby.js and React.js, making it
         fast, responsive...
       </template>
-      <template #img="{ openModal }">
+      <template #img>
         <img
-          @click="openModal"
           src="../../assets/blog.webp"
           alt=""
           class="-z-10 object-contain rounded-md w-full h-full cursor-pointer"

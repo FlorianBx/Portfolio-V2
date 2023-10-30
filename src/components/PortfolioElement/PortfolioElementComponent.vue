@@ -71,7 +71,9 @@ const { technology } = props
       >
         X
       </button>
-      <slot name="img" :open-modal="toggleModal"></slot>
+      <div class="max-w-3xl">
+        <slot name="img" :open-modal="toggleModal"></slot>
+      </div>
     </div>
   </div>
 </template>
