@@ -16,6 +16,7 @@ import VitestIcon from '../Logos/Skills/VitestIcon.vue'
       <span class="text-secondary">EN</span>
     </a> -->
     <h1
+      id="home"
       class="md:w-full w-60 text-4xl font-bold font-heading tracking-tight text-start text-primary sm:text-6xl"
     >
       Vue js Developer
