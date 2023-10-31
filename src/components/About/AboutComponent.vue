@@ -8,6 +8,7 @@ import SectionSlot from '../../components/SectionSlot/SectionSlot.vue'
   <SectionSlot>
     <h2
       id="about"
+      tabindex="0"
       class="text-3xl font-bold font-heading tracking-tight text-primary sm:text-4xl"
     >
       About Me
@@ -18,7 +19,7 @@ import SectionSlot from '../../components/SectionSlot/SectionSlot.vue'
           <CardComponent />
         </div>
         <div class="flex flex-col">
-          <p class="text-xl leading-8 text-white-600 font-body">
+          <p tabindex="0" class="text-xl leading-8 text-white-600 font-body">
             I am a passionate web developer, specialized in Vue.js, TypeScript,
             and JavaScript. My journey is a unique blend of self-learning and
             formal education at 42 School, an institution renowned for its
@@ -27,14 +28,14 @@ import SectionSlot from '../../components/SectionSlot/SectionSlot.vue'
             these skills, allowing me to serve as a mentor for others.
           </p>
           <div class="mt-10 leading-7 text-white-700 font-body">
-            <p>
+            <p tabindex="0">
               My commitment to coding goes beyond programming itself. I am a
               perpetual learner, always on the lookout for new technologies and
               methods to enhance my craft. This drives me to write regularly on
               topics ranging from design patterns to development best practices,
               thereby solidifying my professional online presence.
             </p>
-            <p class="mt-10 font-body">
+            <p class="mt-10 font-body" tabindex="0">
               For me, every challenge is an opportunity for growth and every
               failure a lesson to be learned. I firmly believe that development
               is as much about attitude as it is about skill, and I am

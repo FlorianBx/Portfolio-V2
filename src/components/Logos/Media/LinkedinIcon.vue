@@ -1,5 +1,9 @@
 <template>
-  <a target="_blank" href="https://www.linkedin.com/in/florianbeaumont/">
+  <a
+    tabindex="-1"
+    target="_blank"
+    href="https://www.linkedin.com/in/florianbeaumont/"
+  >
     <svg
       width="25"
       height="25"

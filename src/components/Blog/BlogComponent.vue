@@ -59,12 +59,13 @@ const blogPosts = [
   <!-- Blog section -->
   <SectionSlot>
     <div id="blog" class="text-start max-w-md md:max-w-5xl">
-      <h2
+      <p
+        tabindex="0"
         class="text-3xl font-bold font-heading tracking-tight text-primary sm:text-4xl"
       >
         Latest articles
-      </h2>
-      <p class="mt-2 text-lg font-body leading-8 text-primary">
+      </p>
+      <p tabindex="0" class="mt-2 text-lg font-body leading-8 text-primary">
         An insight into my recent thoughts and contributions to the tech
         community.
       </p>

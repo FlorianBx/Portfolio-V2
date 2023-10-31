@@ -30,7 +30,7 @@ import VitestIcon from '../Logos/Skills/VitestIcon.vue'
       class="mt-0 py-4 md:text-lg md:w-full w-full text-start h-auto leading-8 text-gray-300 font-body"
     >
       Self-taught Vue.js developer trained at
-      <a href="https://42.fr/en/homepage/" aria-label="Link to my school 42">
+      <a href="https://42.fr/en/homepage/" aria-label="42 school website">
         42 school
       </a>
       . Dedicated front-end coder with a keen eye for detail and a passion for

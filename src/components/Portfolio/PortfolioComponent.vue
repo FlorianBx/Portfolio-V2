@@ -21,9 +21,12 @@ import SectionSlot from '../SectionSlot/SectionSlot.vue'
       project-github-u-r-l="https://github.com/BFlorian91/Code-Snippets-Vault"
     >
       <template #title>Code Vault</template>
-      <template #tech>Vue</template>
+      <template #tech><p tabindex="0">Vue</p></template>
       <template #description>
-        <p class="line-clamp-2 sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl">
+        <p
+          tabindex="0"
+          class="line-clamp-2 sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl"
+        >
           Boost your productivity with an AI-powered code snippets manager for
           developers 🚀
         </p>
@@ -43,9 +46,12 @@ import SectionSlot from '../SectionSlot/SectionSlot.vue'
       <template #title>
         Portfolio #<span class="text-red-300">deprecated</span></template
       >
-      <template #tech>React</template>
+      <template #tech><p tabindex="0">React</p></template>
       <template #description>
-        <p class="line-clamp-2 sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl">
+        <p
+          tabindex="0"
+          class="line-clamp-2 sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl"
+        >
           My React portfolio website showcases my web development and other
           projects. It's interactive, responsive, and easy to navigate. With a
           clean and modern design, it highlights my experience and creativity
@@ -65,12 +71,15 @@ import SectionSlot from '../SectionSlot/SectionSlot.vue'
       project-github-u-r-l="https://github.com/BFlorian91/Blog-dev"
     >
       <template #title>Blog</template>
-      <template #tech>React</template>
+      <template #tech><p tabindex="0">React</p></template>
       <template #description>
-        <p class="line-clamp-2 sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl">
+        <p
+          tabindex="0"
+          class="line-clamp-2 sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl"
+        >
           My development blog is built with Gatsby.js and React.js, making it
+          fast, responsive...
         </p>
-        fast, responsive...
       </template>
       <template #img>
         <img

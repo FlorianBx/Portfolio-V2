@@ -13,6 +13,8 @@ import InstagramIcon from '../Logos/Media/InstagramIcon.vue'
     >
       <div class="mt-10 flex justify-center gap-12 w-full">
         <a
+          target="_blank"
+          rel="noopener noreferrer"
           href="https://github.com/BFlorian91"
           class="text-gray-400 hover:text-hover"
           aria-label="Check out my GitHub repositories"
@@ -22,6 +24,7 @@ import InstagramIcon from '../Logos/Media/InstagramIcon.vue'
         </a>
         <a
           target="_blank"
+          rel="noopener noreferrer"
           href="https://www.linkedin.com/in/florianbeaumont/"
           class="text-gray-400 hover:text-hover"
           aria-label="View my LinkedIn profile"
@@ -30,6 +33,8 @@ import InstagramIcon from '../Logos/Media/InstagramIcon.vue'
           <LinkedinIcon />
         </a>
         <a
+          target="_blank"
+          rel="noopener noreferrer"
           href="https://www.instagram.com/fb.visual/"
           class="text-gray-400 hover:text-hover"
           aria-label="Follow me on Instagram"
@@ -38,7 +43,7 @@ import InstagramIcon from '../Logos/Media/InstagramIcon.vue'
           <InstagramIcon />
         </a>
       </div>
-      <p class="mt-10 text-center text-xs leading-5 text-primary">
+      <p tabindex="0" class="mt-10 text-center text-xs leading-5 text-primary">
         &copy; 2023 Made with 🩷 by Florian Beaumont
       </p>
     </footer>

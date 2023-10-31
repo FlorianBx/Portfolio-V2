@@ -1,5 +1,5 @@
 <template>
-  <a target="_blank" href="https://github.com/BFlorian91">
+  <a tabindex="-1" target="_blank" href="https://github.com/BFlorian91">
     <svg
       width="25"
       height="25"

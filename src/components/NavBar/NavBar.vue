@@ -26,6 +26,14 @@ const emailLink = computed(() => {
 const filteredMenuItems = computed(() => {
   return menuItems.filter((item) => item.name !== 'Contact')
 })
+
+const handleEnterKeyPress = (link: string): void => {
+  updateCurrentItem(link)
+  const element = document.querySelector(link)
+  if (element) {
+    element.scrollIntoView({ behavior: 'smooth' })
+  }
+}
 </script>
 
 <template>
@@ -41,13 +49,21 @@ const filteredMenuItems = computed(() => {
         :key="item.name"
       >
         <a
+          tabindex="0"
+          role="link"
           v-if="item.name !== 'Contact'"
           @click="updateCurrentItem(item.name)"
           v-scroll-to="item.link"
+          @keydown.enter="handleEnterKeyPress(item.link)"
         >
           {{ item.name }}
         </a>
-        <a v-if="item.name === 'Contact'" :href="emailLink">
+        <a
+          tabindex="0"
+          role="link"
+          v-if="item.name === 'Contact'"
+          :href="emailLink"
+        >
           {{ item.name }}
         </a>
       </li>
@@ -66,7 +82,13 @@ const filteredMenuItems = computed(() => {
         ]"
         :key="item.name"
       >
-        <a @click="updateCurrentItem(item.name)" v-scroll-to="item.link">
+        <a
+          tabindex="0"
+          role="link"
+          @click="updateCurrentItem(item.name)"
+          v-scroll-to="item.link"
+          @keydown.enter="handleEnterKeyPress(item.link)"
+        >
           {{ item.name }}
         </a>
       </li>
