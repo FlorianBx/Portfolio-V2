@@ -19,7 +19,7 @@ const secondary = ref('#1FD8A4')
           target="_blank"
           rel="noopener noreferrer"
           href="https://github.com/BFlorian91"
-          class="text-gray-400 hover:text-hover"
+          class="text-gray-400 hover:text-hover transition-all duration-300 ease-in-out transform hover:scale-125"
           aria-label="Check out my GitHub repositories"
         >
           <GithubIcon :color="secondary" />
@@ -28,7 +28,7 @@ const secondary = ref('#1FD8A4')
           target="_blank"
           rel="noopener noreferrer"
           href="https://www.linkedin.com/in/florianbeaumont/"
-          class="text-gray-400 hover:text-hover"
+          class="text-gray-400 hover:text-hover transition-all duration-300 ease-in-out transform hover:scale-125"
           aria-label="View my LinkedIn profile"
         >
           <LinkedinIcon :color="secondary" />
@@ -37,7 +37,7 @@ const secondary = ref('#1FD8A4')
           target="_blank"
           rel="noopener noreferrer"
           href="https://www.instagram.com/fb.visual/"
-          class="text-gray-400 hover:text-hover"
+          class="text-gray-400 hover:text-hover transition-all duration-300 ease-in-out transform hover:scale-125"
           aria-label="Follow me on Instagram"
         >
           <InstagramIcon :color="secondary" />

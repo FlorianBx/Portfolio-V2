@@ -1,3 +1,10 @@
+<script setup lang="ts">
+const stats = [
+  { id: 1, name: 'Post impression', stat: '1088' },
+  { id: 2, name: 'Growth', stat: '+19.1%' },
+  { id: 3, name: 'Profil view', stat: '+7%' },
+]
+</script>
 <template>
   <div class="px-2">
     <p tabindex="0" class="text-lg font-bold font-heading text-primary">
@@ -7,7 +14,7 @@
       <div
         v-for="item in stats"
         :key="item.name"
-        class="overflow-hidden rounded-lg bg-card px-4 py-5 shadow sm:p-6 transition-all duration-300 ease-in-out transform hover:scale-105"
+        class="overflow-hidden rounded-lg bg-card px-4 py-5 shadow sm:p-6 ring-1 ring-hover transition-all duration-300 ease-in-out transform hover:scale-105"
       >
         <dt
           tabindex="0"
@@ -26,11 +33,3 @@
     </dl>
   </div>
 </template>
-
-<script setup lang="ts">
-const stats = [
-  { id: 1, name: 'Post impression', stat: '1088' },
-  { id: 2, name: 'Growth', stat: '+19.1%' },
-  { id: 3, name: 'Profil view', stat: '+7%' },
-]
-</script>
