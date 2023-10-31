@@ -30,8 +30,11 @@ import VitestIcon from '../Logos/Skills/VitestIcon.vue'
       class="mt-0 py-4 md:text-lg md:w-full w-full text-start h-auto leading-8 text-gray-300 font-body"
     >
       Self-taught Vue.js developer trained at
-      <a href="https://42.fr/en/homepage/">42 school</a>. Dedicated front-end
-      coder with a keen eye for detail and a passion for clean design.
+      <a href="https://42.fr/en/homepage/" aria-label="Link to my school 42">
+        42 school
+      </a>
+      . Dedicated front-end coder with a keen eye for detail and a passion for
+      clean design.
     </p>
     <a
       v-scroll-to="'#about'"
@@ -41,11 +44,17 @@ import VitestIcon from '../Logos/Skills/VitestIcon.vue'
     </a>
     <div class="flex justify-between items-center">
       <div class="flex w-full md:items-end gap-4 pt-4">
-        <ButtonSocial>
+        <ButtonSocial
+          :custom-url="'https://github.com/BFlorian91'"
+          :aria-label="'My Github profile'"
+        >
           <template #image><GithubIcon /></template>
           <template #name>Github</template>
         </ButtonSocial>
-        <ButtonSocial>
+        <ButtonSocial
+          :custom-url="'https://www.linkedin.com/in/florianbeaumont/'"
+          :aria-label="'My linkedin profile'"
+        >
           <template #image><LinkedinIcon /></template>
           <template #name>Linkedin</template>
         </ButtonSocial>
