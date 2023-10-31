@@ -3,6 +3,7 @@
     tabindex="-1"
     target="_blank"
     href="https://www.linkedin.com/in/florianbeaumont/"
+    aria-label="Linkedin - quick link to my profile"
   >
     <svg
       width="25"

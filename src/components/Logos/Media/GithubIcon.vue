@@ -1,5 +1,10 @@
 <template>
-  <a tabindex="-1" target="_blank" href="https://github.com/BFlorian91">
+  <a
+    tabindex="-1"
+    target="_blank"
+    href="https://github.com/BFlorian91"
+    aria-label="GitHub lets show my works"
+  >
     <svg
       width="25"
       height="25"

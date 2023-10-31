@@ -1,5 +1,10 @@
 <template>
-  <a tabindex="-1" target="_blank" href="https://www.instagram.com/fb.visual/">
+  <a
+    tabindex="-1"
+    target="_blank"
+    href="https://www.instagram.com/fb.visual/"
+    aria-label="Instagram - Show my photography"
+  >
     <svg
       width="25"
       height="25"
