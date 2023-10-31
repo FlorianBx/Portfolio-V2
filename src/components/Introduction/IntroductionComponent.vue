@@ -42,6 +42,7 @@ import VitestIcon from '../Logos/Skills/VitestIcon.vue'
       clean design.
     </p>
     <a
+      role="link"
       v-scroll-to="'#about'"
       class="cursor-pointer text-md font-body font-semibold leading-6 text-primary md:mb-3 hover:text-hover"
     >
