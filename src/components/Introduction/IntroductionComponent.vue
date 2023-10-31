@@ -46,14 +46,14 @@ import VitestIcon from '../Logos/Skills/VitestIcon.vue'
       <div class="flex w-full md:items-end gap-4 pt-4">
         <ButtonSocial
           :custom-url="'https://github.com/BFlorian91'"
-          :aria-label="'My Github profile'"
+          :aria-label="'Check out my GitHub repositories'"
         >
           <template #image><GithubIcon /></template>
           <template #name>Github</template>
         </ButtonSocial>
         <ButtonSocial
           :custom-url="'https://www.linkedin.com/in/florianbeaumont/'"
-          :aria-label="'My linkedin profile'"
+          :aria-label="'View my LinkedIn profile'"
         >
           <template #image><LinkedinIcon /></template>
           <template #name>Linkedin</template>

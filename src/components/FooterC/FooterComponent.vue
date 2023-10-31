@@ -13,25 +13,26 @@ import InstagramIcon from '../Logos/Media/InstagramIcon.vue'
     >
       <div class="mt-10 flex justify-center gap-12 w-full">
         <a
-          href="#"
+          href="https://github.com/BFlorian91"
           class="text-gray-400 hover:text-hover"
-          aria-label="My Github page"
+          aria-label="Check out my GitHub repositories"
         >
           <span class="sr-only">Github</span>
           <GithubIcon />
         </a>
         <a
-          href="#"
+          target="_blank"
+          href="https://www.linkedin.com/in/florianbeaumont/"
           class="text-gray-400 hover:text-hover"
-          aria-label="My Linkedin page"
+          aria-label="View my LinkedIn profile"
         >
           <span class="sr-only">Linkedin</span>
           <LinkedinIcon />
         </a>
         <a
-          href="#"
+          href="https://www.instagram.com/fb.visual/"
           class="text-gray-400 hover:text-hover"
-          aria-label="My Instagram page"
+          aria-label="Follow me on Instagram"
         >
           <span class="sr-only">Instagram</span>
           <InstagramIcon />
