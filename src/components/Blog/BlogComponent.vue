@@ -1,5 +1,9 @@
 <script setup lang="ts">
 import SectionSlot from '../SectionSlot/SectionSlot.vue'
+import artImage1 from '../../assets/art-1.webp'
+import artImage2 from '../../assets/art-2.webp'
+import artImage3 from '../../assets/art-3.webp'
+import me from '../../assets/me.webp'
 
 const blogPosts = [
   {
@@ -9,14 +13,12 @@ const blogPosts = [
     href: 'https://www.linkedin.com/pulse/aventure-dans-le-terminal-ranger-ma-sandbox-de-avec-style-beaumont/?trackingId=DSgbXpMTQtK3Z%2FB5dtJJsA%3D%3D',
     description:
       'Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.',
-    imageUrl:
-      'https://media.licdn.com/dms/image/D4E12AQHlLlw8bfBFJQ/article-cover_image-shrink_423_752/0/1697634480764?e=1704326400&v=beta&t=lBTcNYKkBqn9sBrIQVy6herO65BdDj-i-kQCPV6H9do',
+    imageUrl: artImage1,
     date: 'Mar 16, 2020',
     datetime: '2023-03-16',
     author: {
       name: 'Florian Beaumont',
-      imageUrl:
-        'https://media.licdn.com/dms/image/D4E03AQEWzb2EhoGTyw/profile-displayphoto-shrink_200_200/0/1696890003423?e=1703721600&v=beta&t=EPpWoAewxUjwpi4QJsFOl_gYNoOK7m_wfVrcEOwgcGk',
+      imageUrl: me,
     },
   },
   {
@@ -25,14 +27,12 @@ const blogPosts = [
     href: 'https://www.linkedin.com/pulse/parcours-tech-acc%25C3%25A9l%25C3%25A9r%25C3%25A9-confessions-dun-autodidacte-florian-beaumont/?trackingId=u2kE4qjFT6KBuuoHtXdm%2Fw%3D%3D',
     description:
       'Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.',
-    imageUrl:
-      'https://media.licdn.com/dms/image/D4E12AQEdXOl1QOBOOw/article-cover_image-shrink_600_2000/0/1697800671255?e=1704326400&v=beta&t=AomgSoStbNUDU5VOi67BCW_jLnUUBTg5-t3ULJaWjQQ',
+    imageUrl: artImage2,
     date: 'Mar 16, 2020',
     datetime: '2023-11-16',
     author: {
       name: 'Florian Beaumont',
-      imageUrl:
-        'https://media.licdn.com/dms/image/D4E03AQEWzb2EhoGTyw/profile-displayphoto-shrink_200_200/0/1696890003423?e=1703721600&v=beta&t=EPpWoAewxUjwpi4QJsFOl_gYNoOK7m_wfVrcEOwgcGk',
+      imageUrl: me,
     },
   },
   {
@@ -41,22 +41,18 @@ const blogPosts = [
     href: 'https://www.linkedin.com/pulse/reflexions-dev-1-explorer-la-recherche-binaire-en-florian-beaumont/?trackingId=u2kE4qjFT6KBuuoHtXdm%2Fw%3D%3D',
     description:
       'Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.',
-    imageUrl:
-      'https://media.licdn.com/dms/image/D4E12AQHqUqN6U4gSlg/article-inline_image-shrink_1000_1488/0/1697387565652?e=1704326400&v=beta&t=C5mE3tWvF3kN4e7LDAQhLH1wkjXm2eorqEGmClrb4Ak',
+    imageUrl: artImage3,
     date: 'Mar 16, 2020',
     datetime: '2023-10-16',
     author: {
       name: 'Florian Beaumont',
-      imageUrl:
-        'https://media.licdn.com/dms/image/D4E03AQEWzb2EhoGTyw/profile-displayphoto-shrink_200_200/0/1696890003423?e=1703721600&v=beta&t=EPpWoAewxUjwpi4QJsFOl_gYNoOK7m_wfVrcEOwgcGk',
+      imageUrl: me,
     },
   },
-  // More posts...
 ]
 </script>
 
 <template>
-  <!-- Blog section -->
   <SectionSlot>
     <div id="blog" class="text-start max-w-md md:max-w-5xl">
       <p

@@ -38,6 +38,7 @@ const handleEnterKeyPress = (link: string): void => {
 
 <template>
   <div class="hidden md:block fixed -right-44 p-4 top-48 rotate-90">
+    <!-- lg menu  -->
     <ul class="flex gap-4 font-bold text-lg">
       <li
         v-for="item in menuItems"
@@ -69,8 +70,9 @@ const handleEnterKeyPress = (link: string): void => {
       </li>
     </ul>
   </div>
+  <!-- Bottom navigation  -->
   <div
-    class="z-50 md:hidden fixed right-0 left-0 -bottom-1 p-8 bg-card/95 rounded-md"
+    class="z-40 md:hidden fixed right-0 left-0 -bottom-1 p-6 bg-card/95 rounded-md"
   >
     <ul class="flex gap-4 font-bold text-md sm:justify-end justify-around">
       <li
@@ -97,7 +99,7 @@ const handleEnterKeyPress = (link: string): void => {
   <!-- Mobile menu -->
   <Disclosure as="nav" class="bg-transparent" v-slot="{ open }">
     <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
-      <div class="relative flex h-16 items-center justify-between">
+      <div class="z-50 relative flex h-16 items-center justify-between">
         <div class="fixed top-5 right-5 md:hidden">
           <!-- Mobile menu button-->
           <DisclosureButton
@@ -112,7 +114,7 @@ const handleEnterKeyPress = (link: string): void => {
       </div>
     </div>
     <DisclosurePanel
-      class="z-50 lg:hidden fixed top-0 left-0 w-full h-full bg-black bg-opacity-90 flex items-center justify-center"
+      class="z-40 lg:hidden fixed top-0 left-0 w-full h-full bg-black bg-opacity-90 flex items-center justify-center"
     >
       <div class="shadow-md space-y-1 px-2 py-4">
         <DisclosureButton
@@ -123,8 +125,8 @@ const handleEnterKeyPress = (link: string): void => {
           @click="updateCurrentItem(item.name)"
           :class="[
             item.current
-              ? 'bg-card text-primary font-body'
-              : 'text-primary hover:bg-hover hover:text-white',
+              ? 'z-40 bg-card text-primary font-body'
+              : 'z-40 text-primary hover:bg-hover hover:text-white',
             'block rounded-md px-3 py-2 lg:text-base text-3xl font-body',
           ]"
           :aria-current="item.current ? 'page' : undefined"

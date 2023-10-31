@@ -1,8 +1,11 @@
 <script setup lang="ts">
+import { ref } from 'vue'
 import SectionSlot from '../SectionSlot/SectionSlot.vue'
 import GithubIcon from '../Logos/Media/GithubIcon.vue'
 import LinkedinIcon from '../Logos/Media/LinkedinIcon.vue'
 import InstagramIcon from '../Logos/Media/InstagramIcon.vue'
+
+const secondary = ref('#1FD8A4')
 </script>
 
 <template>
@@ -11,7 +14,7 @@ import InstagramIcon from '../Logos/Media/InstagramIcon.vue'
     <footer
       class="flex flex-col -mt-20 items-center max-w-full font-body overflow-hidden px-6 pb-20 sm:pb-24 lg:px-8"
     >
-      <div class="mt-10 flex justify-center gap-12 w-full">
+      <div class="mt-20 flex justify-center gap-12 w-full">
         <a
           target="_blank"
           rel="noopener noreferrer"
@@ -19,7 +22,7 @@ import InstagramIcon from '../Logos/Media/InstagramIcon.vue'
           class="text-gray-400 hover:text-hover"
           aria-label="Check out my GitHub repositories"
         >
-          <GithubIcon />
+          <GithubIcon :color="secondary" />
         </a>
         <a
           target="_blank"
@@ -28,7 +31,7 @@ import InstagramIcon from '../Logos/Media/InstagramIcon.vue'
           class="text-gray-400 hover:text-hover"
           aria-label="View my LinkedIn profile"
         >
-          <LinkedinIcon />
+          <LinkedinIcon :color="secondary" />
         </a>
         <a
           target="_blank"
@@ -37,7 +40,7 @@ import InstagramIcon from '../Logos/Media/InstagramIcon.vue'
           class="text-gray-400 hover:text-hover"
           aria-label="Follow me on Instagram"
         >
-          <InstagramIcon />
+          <InstagramIcon :color="secondary" />
         </a>
       </div>
       <p tabindex="0" class="mt-10 text-center text-xs leading-5 text-primary">
