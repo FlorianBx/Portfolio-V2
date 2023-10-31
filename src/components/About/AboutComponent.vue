@@ -43,11 +43,11 @@ import SectionSlot from '../../components/SectionSlot/SectionSlot.vue'
           </div>
         </div>
       </div>
-      <div class="w-full">
-        <dl class="w-full space-y-8">
+      <ul class="w-full">
+        <li class="w-full space-y-8">
           <StatsComponent />
-        </dl>
-      </div>
+        </li>
+      </ul>
     </div>
   </SectionSlot>
 </template>
