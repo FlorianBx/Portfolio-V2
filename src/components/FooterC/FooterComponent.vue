@@ -19,7 +19,7 @@ import InstagramIcon from '../Logos/Media/InstagramIcon.vue'
           class="text-gray-400 hover:text-hover"
           aria-label="Check out my GitHub repositories"
         >
-          <span class="sr-only">Github - let's check my works</span>
+          <!-- <span class="sr-only">Github - let's check my works</span> -->
           <GithubIcon />
         </a>
         <a
@@ -29,7 +29,7 @@ import InstagramIcon from '../Logos/Media/InstagramIcon.vue'
           class="text-gray-400 hover:text-hover"
           aria-label="View my LinkedIn profile"
         >
-          <span class="sr-only">Linkedin - join me</span>
+          <!-- <span class="sr-only">Linkedin - join me</span> -->
           <LinkedinIcon />
         </a>
         <a
@@ -39,7 +39,7 @@ import InstagramIcon from '../Logos/Media/InstagramIcon.vue'
           class="text-gray-400 hover:text-hover"
           aria-label="Follow me on Instagram"
         >
-          <span class="sr-only">Instagram - Follow me</span>
+          <!-- <span class="sr-only">Instagram - Follow me</span> -->
           <InstagramIcon />
         </a>
       </div>
