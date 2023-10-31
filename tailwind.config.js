@@ -29,8 +29,8 @@ export default {
         '5xl': '3.366rem',
       },
       fontFamily: {
-        heading: 'Fragment Mono',
-        body: 'Fragment Mono',
+        heading: ['Fragment Mono', 'sans-serif'],
+        body: ['Fragment Mono', 'sans-serif'],
       },
       fontWeight: {
         normal: '400',

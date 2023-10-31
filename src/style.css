@@ -2,6 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: 'Fragment Mono';
+  font-weight: 400;
+  src: url('/fonts/FragmentMono.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Fragment Mono';
+  font-weight: 700;
+  src: url('/fonts/FragmentMono.woff2') format('woff2');
+}
+
+
+
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
