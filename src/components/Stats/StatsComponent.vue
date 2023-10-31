@@ -7,7 +7,7 @@
       <div
         v-for="item in stats"
         :key="item.name"
-        class="overflow-hidden rounded-lg bg-card px-4 py-5 shadow sm:p-6"
+        class="overflow-hidden rounded-lg bg-card px-4 py-5 shadow sm:p-6 transition-all duration-300 ease-in-out transform hover:scale-105"
       >
         <dt
           tabindex="0"

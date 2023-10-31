@@ -1,8 +1,6 @@
-@import url('https://fonts.googleapis.com/css?family=Fragment Mono:700|Fragment Mono:400');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
 
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
