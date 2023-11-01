@@ -59,21 +59,14 @@ const handleEnterKeyPress = (link: string): void => {
         >
           {{ item.name }}
         </a>
-        <a
-          tabindex="0"
-          role="link"
-          v-if="item.name === 'Contact'"
-          :href="emailLink"
-        >
+        <a tabindex="0" role="link" v-if="item.name === 'Contact'" :href="emailLink">
           {{ item.name }}
         </a>
       </li>
     </ul>
   </div>
   <!-- Bottom navigation  -->
-  <div
-    class="z-40 md:hidden fixed right-0 left-0 -bottom-1 p-6 bg-card/95 rounded-md"
-  >
+  <div class="z-40 md:hidden fixed right-0 left-0 -bottom-1 p-6 bg-card/95 rounded-md">
     <ul class="flex gap-4 font-bold text-md sm:justify-end justify-around">
       <li
         v-for="item in filteredMenuItems"

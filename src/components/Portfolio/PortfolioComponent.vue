@@ -6,14 +6,10 @@ import SectionSlot from '../SectionSlot/SectionSlot.vue'
 <template>
   <SectionSlot>
     <div id="portfolio" class="text-start max-w-md md:max-w-5xl">
-      <h2
-        class="text-3xl font-bold font-heading tracking-tight text-primary sm:text-4xl"
-      >
+      <h2 class="text-3xl font-bold font-heading tracking-tight text-primary sm:text-4xl">
         Portfolio
       </h2>
-      <p class="mt-2 px-1 text-lg font-body leading-8 text-primary">
-        What I've Been Working On
-      </p>
+      <p class="mt-2 px-1 text-lg font-body leading-8 text-primary">What I've Been Working On</p>
     </div>
     <!-- Github section  -->
     <PortfolioElementComponent
@@ -23,12 +19,8 @@ import SectionSlot from '../SectionSlot/SectionSlot.vue'
       <template #title>Code Vault</template>
       <template #tech><p tabindex="0">Vue</p></template>
       <template #description>
-        <p
-          tabindex="0"
-          class="line-clamp-2 sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl"
-        >
-          Boost your productivity with an AI-powered code snippets manager for
-          developers 🚀
+        <p tabindex="0" class="line-clamp-2 sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl">
+          Boost your productivity with an AI-powered code snippets manager for developers 🚀
         </p>
       </template>
       <template #img>
@@ -43,19 +35,13 @@ import SectionSlot from '../SectionSlot/SectionSlot.vue'
       technology="#61DAFB"
       project-github-u-r-l="https://github.com/BFlorian91/react-portfolio"
     >
-      <template #title>
-        Portfolio #<span class="text-red-300">deprecated</span></template
-      >
+      <template #title> Portfolio #<span class="text-red-300">deprecated</span></template>
       <template #tech><p tabindex="0">React</p></template>
       <template #description>
-        <p
-          tabindex="0"
-          class="line-clamp-2 sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl"
-        >
-          My React portfolio website showcases my web development and other
-          projects. It's interactive, responsive, and easy to navigate. With a
-          clean and modern design, it highlights my experience and creativity
-          across a range of technologies, including React.
+        <p tabindex="0" class="line-clamp-2 sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl">
+          My React portfolio website showcases my web development and other projects. It's
+          interactive, responsive, and easy to navigate. With a clean and modern design, it
+          highlights my experience and creativity across a range of technologies, including React.
         </p>
       </template>
       <template #img>
@@ -73,12 +59,8 @@ import SectionSlot from '../SectionSlot/SectionSlot.vue'
       <template #title>Blog</template>
       <template #tech><p tabindex="0">React</p></template>
       <template #description>
-        <p
-          tabindex="0"
-          class="line-clamp-2 sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl"
-        >
-          My development blog is built with Gatsby.js and React.js, making it
-          fast, responsive...
+        <p tabindex="0" class="line-clamp-2 sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl">
+          My development blog is built with Gatsby.js and React.js, making it fast, responsive...
         </p>
       </template>
       <template #img>

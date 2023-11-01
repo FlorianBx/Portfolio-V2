@@ -8,8 +8,7 @@ import me from '../../assets/me.webp'
 const blogPosts = [
   {
     id: 1,
-    title:
-      '🚀 Aventure dans le Terminal : Ranger ma "Sandbox" de Développement avec Style',
+    title: '🚀 Aventure dans le Terminal : Ranger ma "Sandbox" de Développement avec Style',
     href: 'https://www.linkedin.com/pulse/aventure-dans-le-terminal-ranger-ma-sandbox-de-avec-style-beaumont/?trackingId=DSgbXpMTQtK3Z%2FB5dtJJsA%3D%3D',
     imageUrl: artImage1,
     date: 'Oct 24, 2023',
@@ -56,8 +55,7 @@ const blogPosts = [
         Latest articles
       </p>
       <p tabindex="0" class="mt-2 text-lg font-body leading-8 text-primary">
-        An insight into my recent thoughts and contributions to the tech
-        community.
+        An insight into my recent thoughts and contributions to the tech community.
       </p>
     </div>
     <div
@@ -79,15 +77,10 @@ const blogPosts = [
         ></div>
         <!-- <div class="absolute inset-0 z-10 rounded-2xl"></div> -->
 
-        <div
-          class="gap-y-1 text-sm z-20 font-body leading-6 text-primary rounded-2xl"
-        >
+        <div class="gap-y-1 text-sm z-20 font-body leading-6 text-primary rounded-2xl">
           <time :datetime="post.datetime" class="mr-8">{{ post.date }}</time>
           <div class="-ml-4 flex items-center gap-x-4">
-            <svg
-              viewBox="0 0 2 2"
-              class="-ml-0.5 h-0.5 w-0.5 flex-none fill-white/50"
-            >
+            <svg viewBox="0 0 2 2" class="-ml-0.5 h-0.5 w-0.5 flex-none fill-white/50">
               <circle cx="1" cy="1" r="1" />
             </svg>
             <div class="flex gap-x-2.5">
@@ -100,9 +93,7 @@ const blogPosts = [
             </div>
           </div>
         </div>
-        <p
-          class="mt-3 text-lg z-20 font-semibold font-body leading-6 text-primary"
-        >
+        <p class="mt-3 text-lg z-20 font-semibold font-body leading-6 text-primary">
           <a target="_blank" :href="post.href">
             {{ post.title }}
           </a>

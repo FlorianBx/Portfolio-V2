@@ -7,19 +7,14 @@ const stats = [
 </script>
 <template>
   <div class="px-2">
-    <p tabindex="0" class="text-lg font-bold font-heading text-primary">
-      LinkedIn last 7 days
-    </p>
+    <p tabindex="0" class="text-lg font-bold font-heading text-primary">LinkedIn last 7 days</p>
     <dl class="mt-4 grid grid-cols-1 gap-5 md:grid-cols-3">
       <div
         v-for="item in stats"
         :key="item.name"
         class="overflow-hidden rounded-lg bg-card px-4 py-5 shadow sm:p-6 ring-1 ring-hover transition-all duration-300 ease-in-out transform hover:scale-105"
       >
-        <dt
-          tabindex="0"
-          class="font-body truncate text-sm font-medium text-white-500"
-        >
+        <dt tabindex="0" class="font-body truncate text-sm font-medium text-white-500">
           {{ item.name }}
         </dt>
         <dd

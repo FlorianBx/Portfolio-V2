@@ -8,11 +8,7 @@
     fill="#29A383"
   >
     <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-    <g
-      id="SVGRepo_tracerCarrier"
-      stroke-linecap="round"
-      stroke-linejoin="round"
-    ></g>
+    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
     <g id="SVGRepo_iconCarrier">
       <title>file_type_tailwind</title>
       <path

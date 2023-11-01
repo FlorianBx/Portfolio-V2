@@ -13,13 +13,7 @@ defineProps({
     href="https://www.instagram.com/fb.visual/"
     aria-label="Instagram - Show my photography"
   >
-    <svg
-      width="25"
-      height="25"
-      viewBox="0 0 48 48"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-    >
+    <svg width="25" height="25" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path
         fill-rule="evenodd"
         clip-rule="evenodd"

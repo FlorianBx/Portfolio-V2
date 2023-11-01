@@ -30,11 +30,7 @@ function toggleModal() {
     <div class="flex-1">
       <div class="flex items-center">
         <ProjectGithubIcon />
-        <a
-          class="text-secondary font-bold font-heading"
-          target="_blank"
-          :href="projectGithubURL"
-        >
+        <a class="text-secondary font-bold font-heading" target="_blank" :href="projectGithubURL">
           <slot name="title">Portfolio</slot>
         </a>
       </div>
@@ -43,10 +39,7 @@ function toggleModal() {
       </p>
       <div class="flex items-center gap-4">
         <div class="flex items-center space-x-1">
-          <div
-            :style="{ background: technology }"
-            class="w-4 h-4 mr-1.5 rounded-full"
-          ></div>
+          <div :style="{ background: technology }" class="w-4 h-4 mr-1.5 rounded-full"></div>
           <slot name="tech">Vue</slot>
         </div>
         <div class="flex items-center">
@@ -59,11 +52,7 @@ function toggleModal() {
         </div>
       </div>
     </div>
-    <div
-      @click="toggleModal"
-      role="dialog"
-      class="rounded-md md:block hidden w-56 h-34 p-2.5"
-    >
+    <div @click="toggleModal" role="dialog" class="rounded-md md:block hidden w-56 h-34 p-2.5">
       <slot name="img" :open-modal="toggleModal"></slot>
     </div>
   </div>

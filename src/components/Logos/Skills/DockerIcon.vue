@@ -1,17 +1,7 @@
 <template>
-  <svg
-    width="60"
-    height="60"
-    viewBox="0 0 24 24"
-    xmlns="http://www.w3.org/2000/svg"
-    fill="#000000"
-  >
+  <svg width="60" height="60" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="#000000">
     <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-    <g
-      id="SVGRepo_tracerCarrier"
-      stroke-linecap="round"
-      stroke-linejoin="round"
-    ></g>
+    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
     <g id="SVGRepo_iconCarrier">
       <path
         fill="#0DB7ED"

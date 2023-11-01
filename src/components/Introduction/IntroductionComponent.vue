@@ -38,8 +38,7 @@ import VitestIcon from '../Logos/Skills/VitestIcon.vue'
       >
         42 school
       </a>
-      . Dedicated front-end coder with a keen eye for detail and a passion for
-      clean design.
+      . Dedicated front-end coder with a keen eye for detail and a passion for clean design.
     </p>
     <a
       role="link"

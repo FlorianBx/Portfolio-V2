@@ -3,7 +3,6 @@
 <template>
   <useI18n />
   <a class="absolute top-10 font-body" href="#"
-    ><span class="text-primary line-through">FR</span> |
-    <span class="text-secondary">EN</span></a
+    ><span class="text-primary line-through">FR</span> | <span class="text-secondary">EN</span></a
   >
 </template>

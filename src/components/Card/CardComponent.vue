@@ -10,12 +10,8 @@
         alt=""
         class="absolute inset-0 -z-10 h-full w-full object-cover"
       />
-      <div
-        class="absolute inset-0 -z-10 bg-gradient-to-t from-card via-bg"
-      ></div>
-      <div
-        class="absolute inset-0 -z-10 rounded-2xl ring-1 ring-inset ring-gray-900/10"
-      ></div>
+      <div class="absolute inset-0 -z-10 bg-gradient-to-t from-card via-bg"></div>
+      <div class="absolute inset-0 -z-10 rounded-2xl ring-1 ring-inset ring-gray-900/10"></div>
     </article>
   </div>
 </template>
