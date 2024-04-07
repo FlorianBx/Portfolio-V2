@@ -16,7 +16,6 @@ const props = defineProps({
 })
 const { technology } = props
 
-// Modal !
 const showModal = ref(false)
 function toggleModal() {
   showModal.value = !showModal.value
@@ -52,7 +51,7 @@ function toggleModal() {
         </div>
       </div>
     </div>
-    <div @click="toggleModal" role="dialog" class="rounded-md md:block hidden w-56 h-34 p-2.5">
+    <div @click="toggleModal" class="rounded-md md:block hidden w-56 h-34 p-2.5">
       <slot name="img" :open-modal="toggleModal"></slot>
     </div>
   </div>
@@ -60,18 +59,22 @@ function toggleModal() {
   <div
     v-if="showModal"
     class="fixed z-40 top-0 left-0 w-full h-full flex justify-center items-center bg-black bg-opacity-50 transition-opacity ease-in-out duration-1000"
-    @click="toggleModal"
+    @click.stop=""
     role="dialog"
+    aria-modal="true"
+    aria-labelledby="modal-headline"
   >
     <div
       class="relative p-4 rounded-lg transition-transform ease-in-out duration-1000 transform scale-90"
     >
       <button
+        @click="toggleModal"
         class="absolute text-card bg-secondary p-4 rounded-full font-bold text-xl top-6 right-8 z-40"
+        aria-label="Close modal"
       >
         X
       </button>
-      <div class="max-w-3xl">
+      <div class="max-w-3xl" id="modal-headline">
         <slot name="img" :open-modal="toggleModal"></slot>
       </div>
     </div>

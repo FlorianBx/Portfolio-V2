@@ -8,7 +8,7 @@ export default {
         secondary: '#1FD8A4',
         hover: '#114837',
         ring: '#246854',
-        button: '#29A383',
+        button: '#19614D',
         danger: '#e3342f',
         card: '#0F2E22',
         background: '#0D1512',

@@ -23,6 +23,7 @@ import SectionSlot from '../SectionSlot/SectionSlot.vue'
           Boost your productivity with an AI-powered code snippets manager for developers 🚀
         </p>
       </template>
+      <template #star><p tabindex="0">1</p></template>
       <template #img>
         <img
           src="../../assets/code-vault.webp"
