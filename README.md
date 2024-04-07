@@ -1,9 +1,18 @@
 # Florian Beaumont's Portfolio
-[Visit the Portfolio](https://florianbeaumont.netlify.app)
+<br />
+<div align="center">
+
+  [Visit the Portfolio](https://florianbeaumont.netlify.app)
+  
+</div>
+
+<br />
+
+![LightHouse Score](https://github.com/BFlorian91/Portfolio-V2/blob/main/src/assets/lhscore.png?raw=true)
 ## Introduction
 This repository contains the source code for my Vue.js portfolio. The website serves to showcase my skills, experience, and projects in web development.
 ![Portfolio Preview](https://github.com/BFlorian91/Portfolio-V2/blob/main/src/assets/preview.png?raw=true)
-![LightHouse Score](https://github.com/BFlorian91/Portfolio-V2/blob/main/src/assets/lhscore.png?raw=true)
+
 
 ## Technologies Used
 
