@@ -1,14 +1,20 @@
 # Florian Beaumont's Portfolio
+
 <br />
 <div align="center">
 
   [Visit the Portfolio](https://florianbeaumont.netlify.app)
+
   
 </div>
 
 <br />
 
 ![LightHouse Score](https://github.com/BFlorian91/Portfolio-V2/blob/main/src/assets/lhscore.png?raw=true)
+[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://GitHub.com/Naereen/StrapDown.js/graphs/commit-activity)
+[![Website shields.io](https://img.shields.io/website-up-down-green-red/http/shields.io.svg)](http://shields.io/)
+
+
 ## Introduction
 This repository contains the source code for my Vue.js portfolio. The website serves to showcase my skills, experience, and projects in web development.
 ![Portfolio Preview](https://github.com/BFlorian91/Portfolio-V2/blob/main/src/assets/preview.png?raw=true)
@@ -72,6 +78,8 @@ The site is currently deployed via Netlify.
 - Florian Beaumont - Web Developer specialized in Vue.js and other front-end technologies.
 
 ---
-
-
+[![GitHub watchers](https://img.shields.io/github/watchers/BFlorian91/Portfolio-V2.svg?style=social&label=Watch&maxAge=2592000)](https://GitHub.com/BFlorian91/Portfolio-V2/watchers/)
+[![GitHub latest commit](https://badgen.net/github/last-commit/BFlorian91/Portfolio-V2)](https://GitHub.com/BFlorian91/Portfolio-V2/commit/)
+[![GitHub commits](https://badgen.net/github/commits/BFlorian91/Portfolio-V2)](https://GitHub.com/BFlorian91/Portfolio-V2/commit/)
+---
 
