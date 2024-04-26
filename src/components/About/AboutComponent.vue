@@ -36,7 +36,7 @@ import SectionSlot from '../../components/SectionSlot/SectionSlot.vue'
               >Vue</a
             >,
             <a
-              href="https://nuxtjs.org"
+              href="https://nuxt.com/"
               target="_blank"
               rel="noopener noreferrer"
               class="text-secondary"
