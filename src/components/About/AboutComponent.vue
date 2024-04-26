@@ -25,28 +25,28 @@ import SectionSlot from '../../components/SectionSlot/SectionSlot.vue'
               href="https://vuejs.org"
               target="_blank"
               rel="noopener noreferrer"
-              class="text-primary"
+              class="text-secondary"
               >Vue</a
             >, and I'm always looking for new challenges and new projects. I have worked with
             <a
               href="https://vuejs.org"
               target="_blank"
               rel="noopener noreferrer"
-              class="text-primary"
+              class="text-secondary"
               >Vue</a
             >,
             <a
               href="https://nuxtjs.org"
               target="_blank"
               rel="noopener noreferrer"
-              class="text-primary"
+              class="text-secondary"
               >Nuxt</a
             >,
             <a
               href="https://typescriptlang.org"
               target="_blank"
               rel="noopener noreferrer"
-              class="text-primary"
+              class="text-secondary"
             >
               TypeScript </a
             >, and
@@ -54,7 +54,7 @@ import SectionSlot from '../../components/SectionSlot/SectionSlot.vue'
               href="https://unocss.dev"
               target="_blank"
               rel="noopener noreferrer"
-              class="text-primary"
+              class="text-secondary"
               >UnoCSS</a
             >. My path combines self-learning and studies at the 42 School, known for its innovative
             educational approach. This experience has equipped me with advanced technical skills and
