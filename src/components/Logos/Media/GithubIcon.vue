@@ -10,7 +10,7 @@ defineProps({
   <a
     tabindex="-1"
     target="_blank"
-    href="https://github.com/BFlorian91"
+    href="https://github.com/FlorianBx"
     aria-label="GitHub lets show my works"
   >
     <svg width="25" height="25" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
