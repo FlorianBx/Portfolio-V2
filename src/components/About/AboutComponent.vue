@@ -20,25 +20,46 @@ import SectionSlot from '../../components/SectionSlot/SectionSlot.vue'
         </div>
         <div class="flex flex-col">
           <p tabindex="0" class="text-xl leading-8 text-white-600 font-body">
-            I am a passionate web developer, specialized in Vue.js, TypeScript, and JavaScript. My
-            journey is a unique blend of self-learning and formal education at 42 School, an
-            institution renowned for its innovative pedagogical approach. This experience has not
-            only armed me with advanced technical skills but also the ability to impart these
-            skills, allowing me to serve as a mentor for others.
+            I am a passionate web developer, specialized in
+            <a
+              href="https://vuejs.org"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-primary"
+              >Vue</a
+            >, and I'm always looking for new challenges and new projects. I have worked with
+            <a
+              href="https://vuejs.org"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-primary"
+              >Vue</a
+            >,
+            <a
+              href="https://nuxtjs.org"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-primary"
+              >Nuxt</a
+            >,
+            <a
+              href="https://typescriptlang.org"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-primary"
+            >
+              TypeScript </a
+            >, and
+            <a
+              href="https://unocss.dev"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-primary"
+              >UnoCSS</a
+            >. My path combines self-learning and studies at the 42 School, known for its innovative
+            educational approach. This experience has equipped me with advanced technical skills and
+            has allowed me to become a mentor.
           </p>
-          <div class="mt-10 leading-7 text-white-700 font-body">
-            <p tabindex="0">
-              My commitment to coding goes beyond programming itself. I am a perpetual learner,
-              always on the lookout for new technologies and methods to enhance my craft. This
-              drives me to write regularly on topics ranging from design patterns to development
-              best practices, thereby solidifying my professional online presence.
-            </p>
-            <p class="mt-10 font-body" tabindex="0">
-              For me, every challenge is an opportunity for growth and every failure a lesson to be
-              learned. I firmly believe that development is as much about attitude as it is about
-              skill, and I am determined to excel in both.
-            </p>
-          </div>
         </div>
       </div>
       <ul class="w-full">

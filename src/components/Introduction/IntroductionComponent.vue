@@ -50,7 +50,7 @@ import VitestIcon from '../Logos/Skills/VitestIcon.vue'
     <div class="flex justify-between items-center">
       <div class="flex w-full md:items-end gap-4 pt-4">
         <ButtonSocial
-          :custom-url="'https://github.com/BFlorian91'"
+          :custom-url="'https://github.com/FlorianBx'"
           :aria-label="'Check out my GitHub repositories'"
         >
           <template #image><GithubIcon /></template>

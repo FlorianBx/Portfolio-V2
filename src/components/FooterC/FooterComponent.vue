@@ -9,7 +9,6 @@ const secondary = ref('#1FD8A4')
 </script>
 
 <template>
-  <!-- Footer -->
   <SectionSlot>
     <footer
       class="flex flex-col -mt-20 items-center max-w-full font-body overflow-hidden px-6 pb-20 sm:pb-24 lg:px-8"
@@ -18,7 +17,7 @@ const secondary = ref('#1FD8A4')
         <a
           target="_blank"
           rel="noopener noreferrer"
-          href="https://github.com/BFlorian91"
+          href="https://github.com/FlorianBx"
           class="text-gray-400 hover:text-hover transition-all duration-300 ease-in-out transform hover:scale-125"
           aria-label="Check out my GitHub repositories"
         >
@@ -28,7 +27,7 @@ const secondary = ref('#1FD8A4')
           target="_blank"
           rel="noopener noreferrer"
           href="https://www.linkedin.com/in/florianbeaumont/"
-          class="text-gray-400 hover:text-hover transition-all duration-300 ease-in-out transform hover:scale-125"
+          class="text-gray-400 hover:text-hover transition-all duration-300 ease-in-out transform hover:scale-225"
           aria-label="View my LinkedIn profile"
         >
           <LinkedinIcon :color="secondary" />
@@ -44,7 +43,7 @@ const secondary = ref('#1FD8A4')
         </a>
       </div>
       <p tabindex="0" class="mt-10 text-center text-xs leading-5 text-primary">
-        &copy; 2023 Made with 🩷 by Florian Beaumont
+        &copy; 2023-{{ new Date().getFullYear() }} Made with 🩷 by Florian Beaumont
       </p>
     </footer>
   </SectionSlot>
